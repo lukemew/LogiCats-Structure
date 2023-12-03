@@ -1,0 +1,18 @@
+====== Fontes =======
+Radio Canada - Bold
+Poppins - Medium, Bold & Bold Italic
+Inter - Medium Italic
+
+====== Cores ======
+*algumas das cores
+
+Borda Ciano - #00FFD1
+Borda Roxo - #CE0AEE
+Borda Vermelho - #F81B1B
+
+Cor das letras - 
+Branca - #F5F5F5
+Ciano - #0FC2C0 ou #00FFD1 (testem e vejam qual fica melhor)
+
+Borda das letras - 
+Borda Roxo - #3C0498 (alguns textos tem essa borda, os menores não)
