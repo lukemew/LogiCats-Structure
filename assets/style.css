@@ -1,0 +1,14 @@
+.logo_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation_header {
+display: grid;
+place-items: center;
+}
+.logogatinho {
+  display: grid;
+place-items: left;
+
+}
