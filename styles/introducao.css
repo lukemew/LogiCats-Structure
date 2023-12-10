@@ -1,0 +1,78 @@
+.introducao {
+    background-size: cover;
+    height: 125vh;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/wallpapers/vhs-wallpaper.jpg);
+    position: absolute;
+}
+
+.introducao-cabecalho {
+    backdrop-filter: brightness(25%);
+    text-align: center;
+    color: var(--ciano);
+    width: 15%;
+    margin: 3rem auto;
+    border: 2px solid var(--roxo-borda);
+    border-radius: 10px;
+    padding: 1.5em 7em;
+   
+}
+
+.introducao-cabecalho__texto {
+    font-size: 1.5rem;
+    
+}
+
+.introducao-textos {
+    display: flex;
+    justify-content: space-evenly; /* Coloca espaço entre os dois textos */
+  }
+
+
+
+.introducao__texto {
+    width: 40%; /* Ou qualquer valor que permita algum espaço entre os elementos */
+    box-sizing: border-box; /* Evita que as bordas e preenchimentos alterem as dimensões */
+    padding: 10px;
+    
+}
+
+.introducao__texto h2 {
+    border: 1px solid var(--roxo-borda);
+    border-radius: 10px;
+    margin: 1rem auto;
+    padding: 1rem 4rem;
+    color: var(--ciano);
+}
+
+.introducao__texto > p {
+    border: 1px solid var(--roxo-borda);
+    border-radius: 10px;
+    color: var(--ciano);
+    padding: 1rem 1rem;
+}
+
+.introducao-rodape {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 7rem auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.introducao-rodape > h2 {
+    border: 1px solid var(--roxo-borda);
+    border-radius: 10px;
+    margin: 1rem auto;
+    padding: 1rem 4rem;
+    color: var(--ciano);
+}
+
+.introducao-rodape > p {
+    border: 1px solid var(--roxo-borda);
+    border-radius: 10px;
+    color: var(--ciano);
+    padding: 1rem 1rem;
+}

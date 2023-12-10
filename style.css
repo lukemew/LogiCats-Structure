@@ -1,0 +1,18 @@
+@import url(styles/header.css);
+@import url(styles/introducao.css);
+
+:root{
+  --ciano-borda: #00FFD1;
+  --roxo-borda: #CE0AEE;
+  --vermelho-borda: #F81B1B;
+  --branco: #F5F5F5;
+  --ciano: #00FFD1;
+  --roxo-borda-letra: #3C0498;
+}
+
+body {
+  background-color: #000000;
+  
+  backdrop-filter: brightness(25%);
+}
+
