@@ -1,0 +1,67 @@
+.cabecalho {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/wallpapers/blue-city-wallpaper.jpg);
+    background-size: cover;
+    display: block;
+    height: 125vh;
+}
+
+.cabecalho-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+    overflow: hidden;
+    width: 90%;
+    border: solid 3px var(--roxo-borda);
+    border-radius: 10px;
+    margin: 2rem auto;
+    
+}
+
+.cabecalho-logo__imagem {
+    display: block;
+    width: 10%;
+    height: auto;
+    max-width: 100%;
+}
+
+.cabecalho-navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho-navigation__link {
+    color: var(--ciano);
+    padding: .8em 3em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid var(--roxo-borda);
+    border-radius: 10px;
+}
+
+.cabecalho-mainText {
+    display: flex;
+    width: 50%;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    color: var(--ciano);
+    font-weight: bold;
+    margin: 8rem auto 0rem auto;
+}
+
+.cabecalho__primeiro-texto {
+    margin: 2rem auto;
+    border: 1px solid var(--roxo-borda);
+    border-radius: 10px;
+    padding: .8em 7em;
+}
+
+.cabecalho__ultimo-texto {
+    margin: 2rem auto;
+    border: 1px solid var(--roxo-borda);
+    border-radius: 10px;
+    padding: .8em 7em;
+}
