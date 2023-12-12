@@ -10,6 +10,8 @@
 }
 
 .introducao-cabecalho {
+  font-family: var(--fonte-principal);
+  font-style: italic;
   backdrop-filter: brightness(25%);
   text-align: center;
   color: var(--ciano);
@@ -36,6 +38,8 @@
 }
 
 .introducao__texto h2 {
+  font-size: 20px;
+  font-family: var(--fonte-principal);
   backdrop-filter: brightness(25%);
   border: 1px solid var(--roxo-borda);
   border-radius: 10px;
@@ -45,6 +49,8 @@
 }
 
 .introducao__texto > p {
+  font-size: 14px;
+  font-family: var(--fonte-principal);
   backdrop-filter: brightness(25%);
   border: 1px solid var(--roxo-borda);
   border-radius: 10px;
@@ -63,6 +69,8 @@
 }
 
 .introducao-rodape > h2 {
+  font-size: 20px;
+  font-family: var(--fonte-principal);
   backdrop-filter: brightness(25%);
   border: 1px solid var(--roxo-borda);
   border-radius: 10px;
@@ -72,6 +80,8 @@
 }
 
 .introducao-rodape > p {
+  font-size: 14px;
+  font-family: var(--fonte-principal);
   backdrop-filter: brightness(25%);
   border: 1px solid var(--roxo-borda);
   border-radius: 10px;

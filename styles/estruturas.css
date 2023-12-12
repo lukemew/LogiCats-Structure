@@ -8,6 +8,8 @@
 }
 
 .estruturas-cabecalho {
+  font-family: var(--fonte-principal);
+  font-style: italic;
   backdrop-filter: brightness(25%);
   text-align: center;
   color: var(--ciano);
@@ -30,18 +32,23 @@
   margin: 3rem auto;
   padding: 0 7em;
   width: 100%;
-  max-width: 1200px;
+  max-width: 120vw;
   backdrop-filter: brightness(25%);
   text-align: center;
   color: var(--ciano);
-  width: 70%;
+  width: 50%;
   margin: 3rem auto;
   border: 2px solid var(--roxo-borda);
   border-radius: 10px;
   padding: 1.5em 7em;
 }
 
+.estruturas-itens h2 {
+  margin: .7em 0 .2em 0;
+}
+
 .estruturas__item img {
+  border: 1px solid var(--ciano);
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -50,6 +57,8 @@
 }
 
 .estruturas__item {
+  font-family: var(--fonte-principal);
+  font-style: italic;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -59,6 +68,6 @@
   background-color: rgba(72, 8, 66, 0.5);
   border: 1px solid #ce0aee;
   border-radius: 10px;
-  padding: 1em;
+  padding: .7em;
   backdrop-filter: brightness(29%);
 }

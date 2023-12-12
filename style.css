@@ -9,6 +9,10 @@
   --branco: #f5f5f5;
   --ciano: #00ffd1;
   --roxo-borda-letra: #3c0498;
+
+  --fonte-principal: 'Poppins', sans-serif;
+  --fonte-secundaria: 'Radio Canada', sans-serif;
+  --fonte-terciaria: 'Inter', sans-serif;
 }
 
 body {

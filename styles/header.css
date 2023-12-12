@@ -34,7 +34,7 @@
 
 .cabecalho-navigation__link {
 
-    
+    font-family: var(--fonte-secundaria);
     color: var(--ciano);
     padding: .8em 3em;
     text-decoration: none;
@@ -45,6 +45,7 @@
 }
 
 .cabecalho-mainText {
+    font-family: var(--fonte-principal);
     display: flex;
     width: 50%;
     justify-items: center;
@@ -52,7 +53,6 @@
     flex-direction: column;
     padding: 1em;
     color: var(--ciano);
-    font-weight: bold;
     margin: 8rem auto 0rem auto;
 }
 
@@ -69,5 +69,5 @@
     margin: 2rem auto;
     border: 1px solid var(--roxo-borda);
     border-radius: 10px;
-    padding: .8em 7em;
+    padding: 3em 7em;
 }
