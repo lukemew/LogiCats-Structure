@@ -1,0 +1,22 @@
+@import url(styles/header.css);
+@import url(styles/introducao.css);
+@import url(styles/estruturas.css);
+@import url(styles/rodape.css);
+:root {
+  --ciano-borda: #00ffd1;
+  --roxo-borda: #ce0aee;
+  --vermelho-borda: #f81b1b;
+  --branco: #f5f5f5;
+  --ciano: #00ffd1;
+  --roxo-borda-letra: #3c0498;
+}
+
+body {
+  background-color: #000000;
+
+  backdrop-filter: brightness(25%);
+}
+.introducao__texto,
+.introducao-rodape {
+  text-align: center;
+}
