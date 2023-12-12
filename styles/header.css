@@ -1,8 +1,10 @@
 .cabecalho {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/wallpapers/blue-city-wallpaper.jpg);
     background-size: cover;
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 125vh;
+    border-bottom: 1px solid var(--roxo-borda);
 }
 
 .cabecalho-logo {
@@ -31,6 +33,8 @@
 }
 
 .cabecalho-navigation__link {
+
+    
     color: var(--ciano);
     padding: .8em 3em;
     text-decoration: none;
@@ -53,6 +57,7 @@
 }
 
 .cabecalho__primeiro-texto {
+    backdrop-filter: brightness(25%);
     margin: 2rem auto;
     border: 1px solid var(--roxo-borda);
     border-radius: 10px;
@@ -60,6 +65,7 @@
 }
 
 .cabecalho__ultimo-texto {
+    backdrop-filter: brightness(25%);
     margin: 2rem auto;
     border: 1px solid var(--roxo-borda);
     border-radius: 10px;

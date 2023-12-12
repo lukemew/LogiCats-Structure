@@ -4,7 +4,9 @@
   background-position: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../assets/wallpapers/vhs-wallpaper.jpg);
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--roxo-borda);
 }
 
 .introducao-cabecalho {
@@ -34,6 +36,7 @@
 }
 
 .introducao__texto h2 {
+  backdrop-filter: brightness(25%);
   border: 1px solid var(--roxo-borda);
   border-radius: 10px;
   margin: 1rem auto;
@@ -42,6 +45,7 @@
 }
 
 .introducao__texto > p {
+  backdrop-filter: brightness(25%);
   border: 1px solid var(--roxo-borda);
   border-radius: 10px;
   color: var(--ciano);
@@ -59,6 +63,7 @@
 }
 
 .introducao-rodape > h2 {
+  backdrop-filter: brightness(25%);
   border: 1px solid var(--roxo-borda);
   border-radius: 10px;
   margin: 1rem auto;
@@ -67,6 +72,7 @@
 }
 
 .introducao-rodape > p {
+  backdrop-filter: brightness(25%);
   border: 1px solid var(--roxo-borda);
   border-radius: 10px;
   color: var(--ciano);

@@ -1,9 +1,10 @@
 .estruturas {
   background-size: cover;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(../assets/wallpapers/cats_on_the_roof.jpg);
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
 }
 
 .estruturas-cabecalho {
