@@ -16,8 +16,7 @@
     width: 90%;
     border: solid 3px var(--roxo-borda);
     border-radius: 10px;
-    margin: 2rem auto;
-    
+    margin: 2rem auto;   
 }
 
 .cabecalho-logo__imagem {
@@ -33,8 +32,9 @@
     justify-content: space-around;
 }
 
-.cabecalho-navigation__link {
 
+
+.cabecalho-navigation__link {
     font-family: var(--fonte-secundaria);
     color: var(--ciano);
     padding: .8em 3em;
@@ -43,6 +43,12 @@
     font-size: 1rem;
     border: 2px solid var(--roxo-borda);
     border-radius: 10px;
+}
+
+.cabecalho-navigation__link:hover {
+    transition: .9s;
+    background-color: var(--vermelho-fundo);
+    border: 1px solid var(--vermelho-borda);
 }
 
 .cabecalho-mainText {

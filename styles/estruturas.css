@@ -56,6 +56,13 @@
   padding: 4px;
 }
 
+.estruturas__item img:hover{
+  transition: .4s;
+  border: 1px solid var(--vermelho-borda);
+  cursor: pointer;
+  padding: 0;
+}
+
 .estruturas__item {
   font-family: var(--fonte-principal);
   font-style: italic;
@@ -70,4 +77,11 @@
   border-radius: 10px;
   padding: .7em;
   backdrop-filter: brightness(29%);
+}
+
+.estruturas__item:hover {
+  transition: .2s;
+  cursor: pointer;
+  color: var(--vermelho-borda);
+  padding: 1em;
 }
