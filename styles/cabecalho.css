@@ -8,6 +8,7 @@
 }
 
 .cabecalho-logo {
+    background-color: var(--ciano-fundo);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -22,19 +23,26 @@
 .cabecalho-logo__imagem {
     display: block;
     padding: 2rem;
-    width: 10%;
+    width: 9vw;
     height: auto;
-    max-width:100%;
+    max-width: 100%;
 }
 
+.cabecalho-logo__logicats {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 25vw;
+    margin-right: 18rem; /* Empurra para a esquerda o máximo possível */
+}
 .cabecalho-navigation {
     display: flex;
     justify-content: space-around;
 }
 
 
-
 .cabecalho-navigation__link {
+    background-color: var(--ciano-fundo);
     font-family: var(--fonte-secundaria);
     color: var(--ciano);
     padding: .8em 3em;
@@ -46,7 +54,7 @@
 }
 
 .cabecalho-navigation__link:hover {
-    transition: .9s;
+    transition: .5s;
     background-color: var(--vermelho-fundo);
     border: 1px solid var(--vermelho-borda);
 }

@@ -2,8 +2,12 @@
 @import url(styles/introducao.css);
 @import url(styles/estruturas.css);
 @import url(styles/rodape.css);
+
+@import url(styles/aula.css);
+
 :root {
   --ciano-borda: #00ffd1;
+  --ciano-fundo: rgba(2, 53, 53, 0.19);
   --roxo-borda: #ce0aee;
   --vermelho-borda: #f81b1b;
   --vermelho-fundo: rgba(53, 2, 2, 0.19);
@@ -19,7 +23,7 @@
 body {
   background-color: #000000;
 
-  backdrop-filter: brightness(25%);
+ 
 }
 .introducao__texto,
 .introducao-rodape {

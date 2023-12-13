@@ -1,0 +1,18 @@
+.aula {
+    background-image: url(../assets/wallpapers/the-city.jpg);
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 125vh;
+    z-index: -1;
+}
+
+.cabecalho-aula {
+
+}
+
+.rodape-aula {
+   
+}

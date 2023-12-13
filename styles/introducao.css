@@ -10,6 +10,7 @@
 }
 
 .introducao-cabecalho {
+  -webkit-text-stroke: 1px var(--roxo-borda-letra);
   font-family: var(--fonte-principal);
   font-style: italic;
   backdrop-filter: brightness(25%);
@@ -38,6 +39,8 @@
 }
 
 .introducao__texto h2 {
+  -webkit-text-stroke: 1px var(--roxo-borda-letra);
+  font-weight: bold;
   font-size: 20px;
   font-family: var(--fonte-principal);
   backdrop-filter: brightness(25%);
@@ -69,6 +72,8 @@
 }
 
 .introducao-rodape > h2 {
+  -webkit-text-stroke: 1px var(--roxo-borda-letra);
+  font-weight: bold;
   font-size: 20px;
   font-family: var(--fonte-principal);
   backdrop-filter: brightness(25%);

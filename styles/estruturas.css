@@ -8,6 +8,7 @@
 }
 
 .estruturas-cabecalho {
+  -webkit-text-stroke: 1px var(--roxo-borda-letra);
   font-family: var(--fonte-principal);
   font-style: italic;
   backdrop-filter: brightness(25%);
@@ -29,8 +30,6 @@
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin: 3rem auto;
-  padding: 0 7em;
   width: 100%;
   max-width: 120vw;
   backdrop-filter: brightness(25%);
@@ -44,6 +43,8 @@
 }
 
 .estruturas-itens h2 {
+  font-style: italic;
+  -webkit-text-stroke: 1px var(--roxo-borda-letra);
   margin: .7em 0 .2em 0;
 }
 
@@ -78,6 +79,7 @@
   padding: .7em;
   backdrop-filter: brightness(29%);
 }
+
 
 .estruturas__item:hover {
   transition: .2s;
