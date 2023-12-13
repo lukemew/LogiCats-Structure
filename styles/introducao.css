@@ -1,12 +1,13 @@
 .introducao {
   background-size: cover;
-  height: 125vh;
+  height: auto;
   background-position: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../assets/wallpapers/vhs-wallpaper.jpg);
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid var(--roxo-borda);
+  position: relative;
 }
 
 .introducao-cabecalho {
@@ -39,6 +40,7 @@
 }
 
 .introducao__texto h2 {
+  text-wrap: nowrap;
   -webkit-text-stroke: 1px var(--roxo-borda-letra);
   font-weight: bold;
   font-size: 20px;
@@ -51,7 +53,7 @@
   color: var(--ciano);
 }
 
-.introducao__texto > p {
+.introducao__info {
   font-size: 14px;
   font-family: var(--fonte-principal);
   backdrop-filter: brightness(25%);
@@ -59,6 +61,19 @@
   border-radius: 10px;
   color: var(--ciano);
   padding: 1rem 1rem;
+  height: auto;
+}
+
+.introducao__estruturas {
+  text-align: left;
+  font-size: 14px;
+  font-family: var(--fonte-principal);
+  backdrop-filter: brightness(25%);
+  border: 1px solid var(--roxo-borda);
+  border-radius: 10px;
+  color: var(--ciano);
+  padding: 1rem 1rem;
+  height: auto;
 }
 
 .introducao-rodape {

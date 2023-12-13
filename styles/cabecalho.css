@@ -3,7 +3,7 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 125vh;
+    height: auto;
     border-bottom: 1px solid var(--roxo-borda);
 }
 
