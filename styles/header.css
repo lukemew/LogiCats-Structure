@@ -65,6 +65,21 @@
     border-radius: 10px;
     padding: .8em 7em;
 }
+.cabecalho__primeiro-textoSobre {
+    margin: 2rem auto;
+    border: 1px solid var(--roxo-borda);
+    border-radius: 10px;
+    padding: .8em 7em;
+    font-size: 1.2em;
+}
+
+.cabecalho__ultimo-textoSobre {
+    margin: 2rem auto;
+    border: 1px solid var(--roxo-borda);
+    border-radius: 10px;
+    padding: .8em 7em;
+    font-size: 1.2em;
+}
 .azul {
     color: #00ffd1;
 }
