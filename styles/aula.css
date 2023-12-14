@@ -1,18 +1,74 @@
 .aula {
-    background-image: url(../assets/wallpapers/the-city.jpg);
-    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/wallpapers/the-city.jpg);
     width: 100%;
+    position: relative;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 125vh;
+    height: auto;
     z-index: -1;
 }
 
-.cabecalho-aula {
-
+.cabecalho-aula__logo {
+    border: 1px solid var(--ciano-borda);
 }
 
-.rodape-aula {
-   
+.aula__link {
+    border: 1px solid var(--ciano-borda);
+}
+
+.aula__estrutura {
+    text-wrap: nowrap;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: var(--fonte-principal);
+    backdrop-filter: brightness(25%);
+    border: 1px solid var(--ciano-borda);
+    border-radius: 10px;
+    margin: 4rem auto 0;
+    padding: .5rem 4rem;
+    color: var(--ciano);
+}
+
+.aula__ensinamentos {
+    width: 55%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: var(--fonte-terciaria);
+    backdrop-filter: brightness(25%);
+    border: 1px solid var(--ciano-borda);
+    border-radius: 5px;
+    margin: 2rem auto;
+    padding: 12rem 4rem;
+    color: var(--ciano);
+}
+
+.container__seletores {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.aula__botao {
+    font-size: .8rem;
+    backdrop-filter: brightness(25%);
+    border: 1px solid var(--ciano-borda);
+    border-radius: 25px;
+    padding: .5rem 1rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--ciano);
+}
+
+.rodape-aula__logo {
+    border: 1px solid var(--ciano-borda);
+    display: flex;
+}
+
+.rodape-aula h2 {
+    font-family: var(--fonte-terciaria);
+    color: var(--ciano);
+}
+
+.rodape-aula img {
+    width: 25%;
 }

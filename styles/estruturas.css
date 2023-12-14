@@ -84,7 +84,6 @@
   backdrop-filter: brightness(29%);
 }
 
-
 .estruturas__item:hover {
   text-wrap: nowrap;
   transition: .2s;
