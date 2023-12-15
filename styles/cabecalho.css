@@ -86,3 +86,36 @@
     border-radius: 10px;
     padding: 3em 7em;
 }
+
+.cabecalho-mainText {
+    text-align: center;
+}
+
+.cabecalho__primeiro-textoSobre {
+        border: 2px solid var(--roxo-borda); /* Cor da borda */
+        border-radius: 10px; /* Raio da borda para torná-la arredondada */
+        padding: 5px; /* Espaçamento interno para o conteúdo */
+        display: inline-block; /* Para que o bloco se ajuste ao conteúdo */
+        background-color: var(--cor-de-fundo); /* Cor de fundo do bloco */
+    }
+
+.cabecalho__ultimo-textoSobre {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: var(--fonte-terciaria);
+    backdrop-filter: brightness(25%);
+    border: 1px solid var(--roxo-borda);
+    border-radius: 5px;
+    color: white;
+    box-sizing: border-box;
+}
+
+span.azul{
+    color: var(--ciano);
+}
+
