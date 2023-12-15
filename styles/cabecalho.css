@@ -105,7 +105,6 @@
     margin: 2rem auto;
     padding: 2rem;
     text-align: center;
-    font-weight: bold;
     font-size: 1.2rem;
     font-family: var(--fonte-terciaria);
     backdrop-filter: brightness(25%);
