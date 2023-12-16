@@ -10,61 +10,151 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:ital,wght@0,500;0,700;1,700&family=Radio+Canada:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="assets/icons/cat_icon_02.png" type="image/x-icon">
+  <style>
+    .aula {
+      display: flex;
+    }
+
+    .aula__ensinamentos {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      float: left;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem;
+      flex-wrap: nowrap;
+    }
+
+    .navbar-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body class="aula">
-    <header class="cabecalho-aula">
-        <div class="cabecalho-logo cabecalho-aula__logo">
-          <img class="cabecalho-logo__imagem" src="assets/icons/cat_icon_02.png" alt="logo gatinho">
-          <img class="cabecalho-logo__logicats" src="assets/LogiCats_logo_02.png" alt="Logicats">
-        </div>
-    
-        <div class="cabecalho-navigation">
-          <a class="cabecalho-navigation__link aula__link" href="#">Sobre nós</a>
-          <a class="cabecalho-navigation__link aula__link" href="index.html">Inicio</a>
-          <a class="cabecalho-navigation__link aula__link" href="#">Menu</a>
-        </div>
-    </header>
+  <header class="cabecalho-aula">
+    <div class="cabecalho-logo cabecalho-aula__logo">
+      <img class="cabecalho-logo__imagem" src="assets/icons/cat_icon_02.png" alt="logo gatinho">
+      <img class="cabecalho-logo__logicats" src="assets/LogiCats_logo_02.png" alt="Logicats">
+    </div>
 
-    <section class="aula">
+    <div class="cabecalho-navigation">
+      <a class="cabecalho-navigation__link aula__link" href="#">Sobre nós</a>
+      <a class="cabecalho-navigation__link aula__link" href="index.html">Inicio</a>
+      <a class="cabecalho-navigation__link aula__link" href="#">Menu</a>
+    </div>
+  </header>
+
+  <section class="aula">
+
+    <div class="container">
       <div class="aula__estrutura">
         <h2 class="aula__estrutura-nome">
           Arrays
         </h2>
       </div>
-
-      <div class="container">
-      <div class="aula__ensinamentos">
-        
-      </div>
-      <div class="aula__progresso">
-
-      </div>
-      </div>
+      
+    <div class="container__ensinamentos">
+    <div class="navbar" id="navbar"></div>
+    <div class="aula__ensinamentos"></div>
+    </div>
+    <div class="aula__progresso">
+      <progress value="0" max="100"></progress>
+    </div>
+    <!-- Navbar lateral -->
 
       <div class="container__seletores">
         <div class="aula__botao">
-          <h2 class="aula__botao-back">Anterior</h2>
+          <h2 class="aula__botao-back" id="back-button">Anterior</h2>
         </div>
         <div class="aula__botao">
-          <h2 class="aula__botao-next">Próximo</h2>
+          <h2 class="aula__botao-next" id="next-button">Próximo</h2>
         </div>
       </div>
 
       
-    </section>
+    </div>
+  </section>
 
-    <footer class="rodape-aula">
-        <div class="rodape-logo cabecalho-logo rodape-aula__logo">
-          <img class="cabecalho-logo__imagem" src="assets/LogiCats_logo_02.png" alt="Logicats">
-        <div class="rodape-texto">
-          <h2>Todos os direitos reservados.</h2>
-          <div class="rodape-textos__icons">
-          </div>
-        </div>
-        <div class="rodape-catIcon">
-        </div>
-        </div>
-    </footer>
+  <footer class="rodape-aula">
+    <div class="rodape-logo cabecalho-logo rodape-aula__logo">
+      <img class="cabecalho-logo__imagem" src="assets/LogiCats_logo_02.png" alt="Logicats">
+      <div class="rodape-texto">
+        <h2>Todos os direitos reservados.</h2>
+        <div class="rodape-textos__icons"></div>
+      </div>
+      <div class="rodape-catIcon"></div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const items = [
+        "Item 1: Conteúdo do Item 1",
+        "Item 2: Conteúdo do Item 2",
+        "Item 3: Conteúdo do Item 3",
+        "Item 4: Conteúdo do Item 4",
+        "Item 5: Conteúdo do Item 5",
+        "Item 6: Conteúdo do Item 6"
+      ];
+
+      let currentIndex = 0;
+
+      const updateContent = () => {
+        document.querySelector(".aula__ensinamentos").innerHTML = `<p>${items[currentIndex]}</p>`;
+        const progress = ((currentIndex + 1) / items.length) * 100;
+        document.querySelector(".aula__progresso progress").setAttribute("value", progress);
+
+        // Atualiza a navbar lateral
+        const navbar = document.querySelector("#navbar");
+        navbar.innerHTML = "";
+        items.forEach((item, index) => {
+          const navbarCircle = document.createElement("div");
+          navbarCircle.classList.add("navbar-circle");
+          navbarCircle.textContent = `${index + 1}`;
+          navbarCircle.addEventListener("click", () => jumpToItem(index));
+          navbar.appendChild(navbarCircle);
+        });
+      };
+
+      const showNextItem = () => {
+        currentIndex = Math.min(currentIndex + 1, items.length - 1);
+        updateContent();
+      };
+
+      const showPreviousItem = () => {
+        currentIndex = Math.max(currentIndex - 1, 0);
+        updateContent();
+      };
+
+      const jumpToItem = (index) => {
+        currentIndex = Math.min(Math.max(parseInt(index), 0), items.length - 1);
+        updateContent();
+      };
+
+      const backButton = document.querySelector("#back-button");
+      const nextButton = document.querySelector("#next-button");
+
+      backButton.addEventListener("click", showPreviousItem);
+      nextButton.addEventListener("click", showNextItem);
+
+      updateContent();
+    });
+  </script>
 </body>
+
 </html>

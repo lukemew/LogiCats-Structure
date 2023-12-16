@@ -18,6 +18,8 @@
 }
 
 .aula__estrutura {
+    width: 5%;
+    text-align: center;
     text-wrap: nowrap;
     font-weight: bold;
     font-size: 1.2rem;
@@ -25,13 +27,19 @@
     backdrop-filter: brightness(25%);
     border: 1px solid var(--ciano-borda);
     border-radius: 10px;
-    margin: 4rem auto 0;
+    margin: 0 auto;
     padding: .5rem 4rem;
     color: var(--ciano);
 }
 
+.container__ensinamentos {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 60%;
+}
+
 .aula__ensinamentos {
-    width: 55%;
     font-weight: bold;
     font-size: 1.2rem;
     font-family: var(--fonte-terciaria);
@@ -43,6 +51,20 @@
     color: var(--ciano);
 }
 
+.aula__progresso {
+    margin: 1rem auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+progress {
+    border: solid 1px var(--ciano-borda);
+    border-radius: 50px;
+    width: 80%;
+}
+
 .container__seletores {
     display: flex;
     justify-content: center;
@@ -50,6 +72,7 @@
 }
 
 .aula__botao {
+    user-select: none;
     font-size: .8rem;
     backdrop-filter: brightness(25%);
     border: 1px solid var(--ciano-borda);
@@ -57,6 +80,12 @@
     padding: .5rem 1rem;
     font-family: var(--fonte-secundaria);
     color: var(--ciano);
+}
+
+.aula__botao:hover {
+    transition: .2s;
+    cursor: pointer;
+    border: 1px solid var(--vermelho-borda);
 }
 
 .rodape-aula__logo {
