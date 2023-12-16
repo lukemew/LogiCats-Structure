@@ -63,20 +63,19 @@
 
     <div class="container">
       <div class="aula__estrutura">
-        <h2 class="aula__estrutura-nome">
-          Arrays
-        </h2>
+        <h2 class="aula__estrutura-nome" id="nome-estrutura"></h2>
       </div>
-      
-    <div class="container__ensinamentos">
-    <div class="navbar" id="navbar"></div>
-    <div class="aula__ensinamentos"></div>
-    </div>
-    <div class="aula__progresso">
-      <progress value="0" max="100"></progress>
-    </div>
-    <!-- Navbar lateral -->
 
+      <div class="container__ensinamentos">
+        <div class="navbar" id="navbar"></div>
+        <div class="aula__ensinamentos" id="conteudo-aula"></div>
+      </div>
+
+      <div class="aula__progresso">
+        <progress value="0" max="100"></progress>
+      </div>
+
+      <!-- Navbar lateral -->
       <div class="container__seletores">
         <div class="aula__botao">
           <h2 class="aula__botao-back" id="back-button">Anterior</h2>
@@ -86,7 +85,6 @@
         </div>
       </div>
 
-      
     </div>
   </section>
 
@@ -115,7 +113,8 @@
       let currentIndex = 0;
 
       const updateContent = () => {
-        document.querySelector(".aula__ensinamentos").innerHTML = `<p>${items[currentIndex]}</p>`;
+        const conteudoAula = document.querySelector("#conteudo-aula");
+        conteudoAula.innerHTML = `<p>${items[currentIndex]}</p>`;
         const progress = ((currentIndex + 1) / items.length) * 100;
         document.querySelector(".aula__progresso progress").setAttribute("value", progress);
 
@@ -130,6 +129,32 @@
           navbar.appendChild(navbarCircle);
         });
       };
+
+      // Função para exibir o conteúdo correspondente ao valor da variável
+      const mostrarConteudoPersonalizado = (valor) => {
+  switch (valor) {
+    case 1:
+      return "Pilhas";
+    case 2:
+      return "Filas";
+    case 3:
+      return "Árvores";
+    case 4:
+      return "Arrays";
+    case 5:
+      return "Listas";
+    case 6:
+      return "Heaps";
+    case 7:
+      return "Hash Tables";
+    case 8:
+      return "Grafos";
+    // Adicione mais casos conforme necessário
+    default:
+      return "Conteúdo padrão";
+  }
+};
+
 
       const showNextItem = () => {
         currentIndex = Math.min(currentIndex + 1, items.length - 1);
@@ -152,9 +177,20 @@
       backButton.addEventListener("click", showPreviousItem);
       nextButton.addEventListener("click", showNextItem);
 
+      // Obtenha parâmetros da URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const valorVariavel = parseInt(urlParams.get('valorVariavel')) || 0;
+
+      // Altere o valor da variável personalizada conforme necessário
+      const nomeEstrutura = mostrarConteudoPersonalizado(valorVariavel);
+
+      // Exiba o conteúdo personalizado na inicialização
+      document.querySelector("#nome-estrutura").textContent = nomeEstrutura;
+
       updateContent();
     });
   </script>
+
 </body>
 
 </html>

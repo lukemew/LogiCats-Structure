@@ -84,30 +84,39 @@
       </h1>
     </div>
     <div class="estruturas-itens">
-      <div class="estruturas__item"> <img src="./assets/image/cats-pilha.jpg" alt="Listas e Arrays">
+      <div class="estruturas__item" onclick="navegarParaAula('pilhas')">
+        <img src="./assets/image/cats-pilha.jpg" alt="Pilhas">
         <h2>Pilhas</h2>
       </div>
-      <div class="estruturas__item"> <img src="./assets/image/fila-cats.jpg" alt="Listas e Arrays">
+      <div class="estruturas__item" onclick="navegarParaAula('filas')">
+        <img src="./assets/image/fila-cats.jpg" alt="Filas">
         <h2>Filas</h2>
       </div>
-      <div class="estruturas__item"> <img src="./assets/image/tree-cat.JPG" alt="Listas e Arrays">
+      <div class="estruturas__item" onclick="navegarParaAula('arvores')">
+        <img src="./assets/image/cat-arvores.jpg" alt="Árvores">
         <h2>Árvores</h2>
       </div>
-      <div class="estruturas__item"> <img src="./assets/image/cat-arrays.jpg" alt="Listas e Arrays">
+      <div class="estruturas__item" onclick="navegarParaAula('arrays')">
+        <img src="./assets/image/cat-arrays.jpg" alt="Arrays">
         <h2>Arrays</h2>
       </div>
-      <div class="estruturas__item"> <img src="./assets/image/cat-listing.jpg" alt="Listas e Arrays">
+      <div class="estruturas__item" onclick="navegarParaAula('listas')">
+        <img src="./assets/image/cat-listing.jpg" alt="Listas">
         <h2>Listas</h2>
       </div>
-      <div class="estruturas__item"> <img src="./assets/image/heaps-cat.jpg" alt="Listas e Arrays">
+      <div class="estruturas__item" onclick="navegarParaAula('heaps')">
+        <img src="./assets/image/heaps-cat.jpg" alt="Heaps">
         <h2>Heaps</h2>
       </div>
-      <div class="estruturas__item"> <img src="./assets/image/cats-hash-table.jpg" alt="Listas e Arrays">
+      <div class="estruturas__item" onclick="navegarParaAula('hash-tables')">
+        <img src="./assets/image/cats-hash-table.jpg" alt="Hash Tables">
         <h2>Hash Tables</h2>
       </div>
-      <div class="estruturas__item"> <img src="./assets/image/cat-grafos.jpg" alt="Listas e Arrays">
+      <div class="estruturas__item" onclick="navegarParaAula('grafos')">
+        <img src="./assets/image/cat-grafos.jpg" alt="Grafos">
         <h2>Grafos</h2>
       </div>
+      <!-- Adicione mais itens conforme necessário... -->
     </div>
 
     <footer class="rodape">
@@ -126,6 +135,48 @@
   </section>
 
   
+  <script>
+    // Função para navegar para a página aula.html com o título correspondente
+    function navegarParaAula(titulo) {
+      // Modifique a variável conforme necessário
+      let valorVariavel;
+  
+      // Defina o valor da variável com base no título
+      switch (titulo.toLowerCase()) {
+        case 'pilhas':
+          valorVariavel = 1;
+          break;
+        case 'filas':
+          valorVariavel = 2;
+          break;
+        case 'arvores':
+          valorVariavel = 3;
+          break;
+        case 'arrays':
+          valorVariavel = 4;
+          break;
+        case 'listas':
+          valorVariavel = 5;
+          break;
+        case 'heaps':
+          valorVariavel = 6;
+          break;
+        case 'hash-tables':
+          valorVariavel = 7;
+          break;
+        case 'grafos':
+          valorVariavel = 8;
+          break;
+        // Adicione mais casos conforme necessário...
+        default:
+          valorVariavel = 0; // Valor padrão
+      }
+  
+      // Navegue para aula.html com o título e a variável personalizada
+      window.location.href = `aula.html?titulo=${titulo}&valorVariavel=${valorVariavel}`;
+    }
+  </script>
+
 </body>
 
 </html>
