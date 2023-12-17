@@ -25,71 +25,12 @@
         }
         
 
-  
-  const itemsArvores = [
-    {
-      titulo: "Item 1: Conteúdo do Item 1 (Arvores)",
-      conteudo: "Conteúdo das Arvores: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      titulo: "Item 1: Conteúdo do Item 1 (Arvores)",
-      conteudo: "leonardo viado.",
-    },
-  
-    // Adicione mais objetos conforme necessário
-  ];
-
-  const itemsArrays = [
-    {
-      titulo: "Item 1: Conteúdo do Item 1 (ArraysitemsArrays)",
-      conteudo: "Conteúdo das ArraysitemsArrays: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-   
-    // Adicione mais objetos conforme necessário
-  ];
-  const itemsListas = [
-    {
-      titulo: "Item 1: Conteúdo do Item 1 (Listas)",
-      conteudo: "Conteúdo das Listas: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-  
-    // Adicione mais objetos conforme necessário
-  ];
-
-  const itemsHeaps = [
-    {
-      titulo: "Item 1: Conteúdo do Item 1 (Heaps)",
-      conteudo: "Conteúdo das Heaps: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-   
-    // Adicione mais objetos conforme necessário
-  ];
-  const itemsHashTables = [
-    {
-      titulo: "Item 1: Conteúdo do Item 1 (HitemsHashTables)",
-      conteudo: "Conteúdo das itemsHashTables: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-  
-    // Adicione mais objetos conforme necessário
-  ];
-
-  const itemsGrafos = [
-    {
-      titulo: "Item 1: Conteúdo do Item 1 (Filas)",
-      conteudo: "Conteúdo das Filas: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-   
-    // Adicione mais objetos conforme necessário
-  ];
-
-  // Repita o padrão para outros casos do switch
-
   let currentIndex = 0;
   let items;
 
   const updateContent = (valor) => {
     const conteudoAula = document.querySelector("#conteudo-aula");
-    const valorVariavel = valor; // Modifique conforme necessário
+    const valorVariavel = valor;
     const nomeEstrutura = mostrarConteudoPersonalizado(valorVariavel);
 
     switch (nomeEstrutura) {
@@ -134,7 +75,7 @@
         })
         break
       default:
-        items = []; // Adapte conforme necessário
+        items = []; 
     }
 
     // elemento para aplicar uma opacidade e efeito de transição na hora de trocar o conteúdo exibido na tela de aula
@@ -179,7 +120,6 @@
       return "Hash Tables";
     case 8:
       return "Grafos";
-    // Adicione mais casos conforme necessário
     default:
       return "Conteúdo padrão";
   }
