@@ -1,3 +1,4 @@
+/* Estilos para a seção de introdução */
 .introducao {
   background-size: cover;
   height: auto;
@@ -10,6 +11,7 @@
   position: relative;
 }
 
+/* Estilos para o cabeçalho da seção de introdução */
 .introducao-cabecalho {
   -webkit-text-stroke: 1px var(--roxo-borda-letra);
   font-family: var(--fonte-principal);
@@ -28,6 +30,7 @@
   font-size: 1.5rem;
 }
 
+/* Estilos para os textos na seção de introdução */
 .introducao-textos {
   display: flex;
   justify-content: space-evenly; /* Coloca espaço entre os dois textos */
@@ -53,19 +56,8 @@
   color: var(--ciano);
 }
 
-.introducao__info {
-  font-size: 14px;
-  font-family: var(--fonte-principal);
-  backdrop-filter: brightness(25%);
-  border: 1px solid var(--roxo-borda);
-  border-radius: 10px;
-  color: var(--ciano);
-  padding: 1rem 1rem;
-  height: auto;
-}
-
+.introducao__info,
 .introducao__estruturas {
-  text-align: left;
   font-size: 14px;
   font-family: var(--fonte-principal);
   backdrop-filter: brightness(25%);
@@ -76,13 +68,13 @@
   height: auto;
 }
 
+/* Estilos para o rodapé na seção de introdução */
 .introducao-rodape {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin: 7rem auto;
   box-sizing: border-box;
-  display: flex;
   justify-content: center;
 }
 

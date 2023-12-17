@@ -135,46 +135,7 @@
   </section>
 
   
-  <script>
-    // Função para navegar para a página aula.html com o título correspondente
-    function navegarParaAula(titulo) {
-      // Modifique a variável conforme necessário
-      let valorVariavel;
-  
-      // Defina o valor da variável com base no título
-      switch (titulo.toLowerCase()) {
-        case 'pilhas':
-          valorVariavel = 1;
-          break;
-        case 'filas':
-          valorVariavel = 2;
-          break;
-        case 'arvores':
-          valorVariavel = 3;
-          break;
-        case 'arrays':
-          valorVariavel = 4;
-          break;
-        case 'listas':
-          valorVariavel = 5;
-          break;
-        case 'heaps':
-          valorVariavel = 6;
-          break;
-        case 'hash-tables':
-          valorVariavel = 7;
-          break;
-        case 'grafos':
-          valorVariavel = 8;
-          break;
-        // Adicione mais casos conforme necessário...
-        default:
-          valorVariavel = 0; // Valor padrão
-      }
-  
-      // Navegue para aula.html com o título e a variável personalizada
-      window.location.href = `aula.html?titulo=${titulo}&valorVariavel=${valorVariavel}`;
-    }
+  <script src="./script/main.js">
   </script>
 
 </body>
