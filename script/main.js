@@ -1,22 +1,31 @@
 
     document.addEventListener("DOMContentLoaded", function () {
-  const itemsPilhas = [
-    {
-      titulo: "Item 1: Conteúdo do Item 1 (Pilhas)",
-      conteudo: "Conteúdo das Pilhas: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-  
-    // Adicione mais objetos conforme necessário
-  ];
 
-  const itemsFilas = [
-    {
-      titulo: "Item 1: Conteúdo do Item 1 (Filas)",
-      conteudo: "Conteúdo das Filas: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-   
-    // Adicione mais objetos conforme necessário
-  ];
+        function lerArquivo(urlDaEstrutura) {
+            const urlDoArquivo = `../textos/${urlDaEstrutura}`;
+        
+            return fetch(urlDoArquivo)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Erro ao carregar o arquivo: ${response.status}`);
+                    }
+                    return response.json(); // Aqui, response.json() analisa a resposta como JSON
+                })
+                .then(itemsPilhas => {
+                    console.log('Conteúdo do arquivo:', itemsPilhas);
+        
+                    // Retorne o array para que ele possa ser utilizado após o encadeamento de promises
+                    return itemsPilhas;
+                })
+                .catch(error => {
+                    console.error('Deu erro moral:', error);
+                    // Retorna um array vazio (ou outra coisa apropriada) em caso de erro
+                    return [];
+                });
+        }
+        
+
+  
   const itemsArvores = [
     {
       titulo: "Item 1: Conteúdo do Item 1 (Arvores)",
@@ -85,28 +94,44 @@
 
     switch (nomeEstrutura) {
       case "Pilhas":
-        items = itemsPilhas;
+        lerArquivo("Pilhas.txt").then(result => {
+            items = result;
+        })
         break;
       case "Filas":
-        items = itemsFilas;
+        lerArquivo("Filas.txt").then(result => {
+            items = result;
+        })
         break;
       case "Árvores":
-        items = itemsArvores;
+        lerArquivo("Arvores.txt").then(result => {
+            items = result;
+        })
         break;
       case "Arrays":
-        items = itemsArrays;
+        lerArquivo("Arrays.txt").then(result => {
+            items = result;
+        })
         break;
       case "Listas":
-        items = itemsListas;
+        lerArquivo("Listas.txt").then(result => {
+            items = result;
+        })
         break;
       case "Heaps":
-        items = itemsHeaps;
+        lerArquivo("Heaps.txt").then(result => {
+            items = result;
+        })
         break
       case "Hash Tables":
-        items = itemsHashTables;
+        lerArquivo("HashTables.txt").then(result => {
+            items = result;
+        })
         break;
       case "Grafos":
-        items = itemsGrafos;
+        lerArquivo("Grafos.txt").then(result => {
+            items = result;
+        })
         break
       default:
         items = []; // Adapte conforme necessário
