@@ -61,11 +61,17 @@
   padding: 4px;
 }
 
+.estruturas__item:hover {
+  box-shadow: inset 0 0 5px 0 #f1b, 0 0 12px 0 #f1b;
+  transition: .4s;
+}
+
 .estruturas__item img:hover{
+  box-shadow: inset 0 0 12px 0 #f1b, 0 0 12px 0 #f1b;
   transition: .4s;
   border: 1px solid var(--vermelho-borda);
   cursor: pointer;
-  padding: 0;
+  
 }
 
 .estruturas__item {

@@ -9,12 +9,44 @@
     z-index: -1;
 }
 
+.cabecalho-aula {
+    margin: 0 auto;
+    width: 98%;
+    padding-bottom: 1rem;
+}
+
 .cabecalho-aula__logo {
     border: 1px solid var(--ciano-borda);
 }
 
 .aula__link {
     border: 1px solid var(--ciano-borda);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  float: left;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  flex-wrap: nowrap;
+  position: absolute;
+  left: 14%;
+  top: 38%;
+}
+
+.navbar-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .aula__estrutura {
@@ -32,11 +64,20 @@
     color: var(--ciano);
 }
 
+.container {
+    margin: 8rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
 .container__ensinamentos {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     max-width: 60%;
+    max-height: 80vh;
 }
 
 .aula__ensinamentos {
@@ -47,8 +88,23 @@
     border: 1px solid var(--ciano-borda);
     border-radius: 5px;
     margin: 2rem auto;
-    padding: 12rem 4rem;
+    padding: 1rem 4rem;
     color: var(--ciano);
+    display: block;
+    box-sizing: border-box;
+    min-width: 60vw;
+    min-height: 60vh;
+
+}
+
+.aula__ensinamentos > p {
+    opacity: 1; /* Adicionado para definir a opacidade inicial */
+    transition: opacity 0.3s ease; /* Adicionado para definir a transição de opacidade */
+    font-family: var(--fonte-terciaria);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--branco);
+    font-size: 1rem;
 }
 
 .aula__progresso {
@@ -60,8 +116,6 @@
 }
 
 progress {
-    border: solid 1px var(--ciano-borda);
-    border-radius: 50px;
     width: 80%;
 }
 

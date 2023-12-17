@@ -40,7 +40,6 @@
     justify-content: space-around;
 }
 
-
 .cabecalho-navigation__link {
     background-color: var(--ciano-fundo);
     font-family: var(--fonte-secundaria);
@@ -54,6 +53,7 @@
 }
 
 .cabecalho-navigation__link:hover {
+    box-shadow: inset 0 0 8px 0 var(--vermelho-borda), 0 0 12px 0 var(--vermelho-borda);
     transition: .5s;
     background-color: var(--vermelho-fundo);
     border: 1px solid var(--vermelho-borda);
