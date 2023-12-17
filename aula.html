@@ -101,34 +101,59 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const items = [
-        "Item 1: Conteúdo do Item 1",
-        "Item 2: Conteúdo do Item 2",
-        "Item 3: Conteúdo do Item 3",
-        "Item 4: Conteúdo do Item 4",
-        "Item 5: Conteúdo do Item 5",
-        "Item 6: Conteúdo do Item 6"
-      ];
+  const itemsPilhas = [
+    {
+      titulo: "Item 1: Conteúdo do Item 1 (Pilhas)",
+      conteudo: "Conteúdo das Pilhas: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    // Adicione mais objetos conforme necessário
+  ];
 
-      let currentIndex = 0;
+  const itemsFilas = [
+    {
+      titulo: "Item 1: Conteúdo do Item 1 (Filas)",
+      conteudo: "Conteúdo das Filas: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    // Adicione mais objetos conforme necessário
+  ];
 
-      const updateContent = () => {
-        const conteudoAula = document.querySelector("#conteudo-aula");
-        conteudoAula.innerHTML = `<p>${items[currentIndex]}</p>`;
-        const progress = ((currentIndex + 1) / items.length) * 100;
-        document.querySelector(".aula__progresso progress").setAttribute("value", progress);
+  // Repita o padrão para outros casos do switch
 
-        // Atualiza a navbar lateral
-        const navbar = document.querySelector("#navbar");
-        navbar.innerHTML = "";
-        items.forEach((item, index) => {
-          const navbarCircle = document.createElement("div");
-          navbarCircle.classList.add("navbar-circle");
-          navbarCircle.textContent = `${index + 1}`;
-          navbarCircle.addEventListener("click", () => jumpToItem(index));
-          navbar.appendChild(navbarCircle);
-        });
-      };
+  let currentIndex = 0;
+  let items;
+
+  const updateContent = (valor) => {
+    const conteudoAula = document.querySelector("#conteudo-aula");
+    const valorVariavel = valor; // Modifique conforme necessário
+    const nomeEstrutura = mostrarConteudoPersonalizado(valorVariavel);
+
+    switch (nomeEstrutura) {
+      case "Pilhas":
+        items = itemsPilhas;
+        break;
+      case "Filas":
+        items = itemsFilas;
+        break;
+      // Adicione mais casos conforme necessário
+      default:
+        items = []; // Adapte conforme necessário
+    }
+
+    conteudoAula.innerHTML = `<p>${items[currentIndex].conteudo}</p>`;
+    const progress = ((currentIndex + 1) / items.length) * 100;
+    document.querySelector(".aula__progresso progress").setAttribute("value", progress);
+
+    // Atualiza a navbar lateral
+    const navbar = document.querySelector("#navbar");
+    navbar.innerHTML = "";
+    items.forEach((item, index) => {
+      const navbarCircle = document.createElement("div");
+      navbarCircle.classList.add("navbar-circle");
+      navbarCircle.textContent = `${index + 1}`;
+      navbarCircle.addEventListener("click", () => jumpToItem(index));
+      navbar.appendChild(navbarCircle);
+    });
+  };
 
       // Função para exibir o conteúdo correspondente ao valor da variável
       const mostrarConteudoPersonalizado = (valor) => {
@@ -154,8 +179,6 @@
       return "Conteúdo padrão";
   }
 };
-
-
       const showNextItem = () => {
         currentIndex = Math.min(currentIndex + 1, items.length - 1);
         updateContent();
@@ -187,7 +210,7 @@
       // Exiba o conteúdo personalizado na inicialização
       document.querySelector("#nome-estrutura").textContent = nomeEstrutura;
 
-      updateContent();
+      updateContent(valorVariavel);
     });
   </script>
 
