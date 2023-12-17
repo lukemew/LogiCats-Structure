@@ -146,14 +146,14 @@ const showNextItem = () => {
   backButton.addEventListener("click", showPreviousItem);
   nextButton.addEventListener("click", showNextItem);
 
-  // Obtenha parâmetros da URL
+  // Obtém parâmetros da URL
   const urlParams = new URLSearchParams(window.location.search);
   const valorVariavel = parseInt(urlParams.get('valorVariavel')) || 0;
 
-  // Altere o valor da variável personalizada conforme necessário
+  // Altera o valor da variável personalizada conforme necessário
   const nomeEstrutura = mostrarConteudoPersonalizado(valorVariavel);
 
-  // Exiba o conteúdo personalizado na inicialização
+  // Exibe o conteúdo personalizado na inicialização
   document.querySelector("#nome-estrutura").textContent = nomeEstrutura;
 
   updateContent(valorVariavel);
