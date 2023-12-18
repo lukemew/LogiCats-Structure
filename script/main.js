@@ -67,7 +67,7 @@
         
 
   let currentIndex = 0;
-  let items = [0, 0, 0, 0, 0];
+  let items = [];
       
   const updateContent = (valor) => {
     const conteudoAula = document.querySelector("#conteudo-aula");
@@ -222,6 +222,5 @@ const showNextItem = () => {
   document.querySelector("#nome-estrutura").textContent = nomeEstrutura;
 
   updateContent(valorVariavel);
-
 });
 
