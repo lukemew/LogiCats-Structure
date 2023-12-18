@@ -1,22 +1,23 @@
 [
   {
-    "titulo": "Introdução",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "titulo": "O que dizer sobre Hast Tables?",
+    "conteudo": "Tabelas hash usam uma função de hash para converter chaves em índices na tabela. Essa função distribui as chaves de forma uniforme para otimizar o acesso.",
+    "imagem": "assets/image/tabelas-hash.jpg"
   },
   {
-    "titulo": "Seção 2",
-    "conteudo": "teste"
+    "titulo": "Analogia: Cats on The Table",
+    "conteudo": "Considere uma mesa com diversas caixas onde os gatos podem ficar. Cada gato tem um número (hash) que indica em qual caixa ele deve ficar. Se você souber o número do gato, pode ir diretamente à caixa correspondente para encontrá-lo, tornando tudo mais fácil, não é mesmo?."
   },
   {
-    "titulo": "Seção 3",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "titulo": "Como funciona?",
+    "conteudo": "É um array que armazena os elementos, onde cada índice é determinado pela função de dispersão aplicada à chave correspondente. Cada posição na tabela é chamada de 'slot' ou 'bucket'."
   },
   {
-    "titulo": "Seção 4",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "titulo": "O que são as colisões?",
+    "conteudo": "Ocorrem quando duas chaves diferentes têm o mesmo índice após a aplicação da função de dispersão. Existem diferentes métodos para lidar com colisões, como encadeamento (chaining) e endereçamento aberto."
   },
   {
-    "titulo": "Seção 5",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  }
+    "titulo": "Onde é aplicado?",
+    "conteudo": "Hash tables são amplamente utilizadas em bancos de dados, caches de memória, implementações de conjuntos e mapas em linguagens de programação (como dicionários em Python e objetos em JavaScript) devido à sua eficiência na recuperação de dados."
+  } 
 ]
