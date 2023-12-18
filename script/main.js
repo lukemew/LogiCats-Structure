@@ -67,7 +67,7 @@
         
 
   let currentIndex = 0;
-  let items;
+  let items = [0, 0, 0, 0, 0];
       
   const updateContent = (valor) => {
     const conteudoAula = document.querySelector("#conteudo-aula");
