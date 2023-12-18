@@ -181,6 +181,10 @@ progress {
 }
 
 .not-seen {
-    background-color: red;
+    color: red;
+    
  }
  
+ .not-seen.navbar-circle{
+    border: 1px solid var(--vermelho-borda);
+ }
