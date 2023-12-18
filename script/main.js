@@ -67,7 +67,7 @@
         
 
   let currentIndex = 0;
-  let items;
+  let items = [1];
       
   const updateContent = (valor) => {
     const conteudoAula = document.querySelector("#conteudo-aula");
@@ -116,7 +116,7 @@
         })
         break
       default:
-        items = []; 
+        
     }
 
     // elemento para aplicar uma opacidade e efeito de transição na hora de trocar o conteúdo exibido na tela de aula
@@ -146,12 +146,9 @@
   
       conteudoAula.querySelector('p').style.opacity = 0;
   }, 200);
-  
-    
-    
-  const progress = ((currentIndex + 1) / items.length) * 100;
-  document.querySelector(".aula__progresso progress").setAttribute("value", progress);
 
+  
+  
   const navbar = document.querySelector("#navbar");
   navbar.innerHTML = "";
   items.forEach((item, index) => {
