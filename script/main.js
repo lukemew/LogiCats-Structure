@@ -116,7 +116,7 @@
         })
         break
       default:
-        
+        items = [];
     }
 
     // elemento para aplicar uma opacidade e efeito de transição na hora de trocar o conteúdo exibido na tela de aula
