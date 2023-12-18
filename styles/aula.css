@@ -178,3 +178,12 @@ progress {
 .rodape-aula img {
     width: 25%;
 }
+
+.not-seen {
+    color: red;
+    
+ }
+ 
+ .not-seen.navbar-circle{
+    border: 1px solid var(--vermelho-borda);
+ }

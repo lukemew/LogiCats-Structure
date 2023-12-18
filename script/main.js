@@ -159,7 +159,13 @@
     navbarCircle.classList.add("navbar-circle");
     navbarCircle.textContent = `0${index + 1}`;
     navbarCircle.addEventListener("click", () => jumpToItem(index));
-    navbar.appendChild(navbarCircle);
+
+    // Adiciona a classe "not-seen" aos itens não vistos
+   if (index > currentIndex) {
+    navbarCircle.classList.add("not-seen");
+ }
+
+ navbar.appendChild(navbarCircle);
   });
 };
 
