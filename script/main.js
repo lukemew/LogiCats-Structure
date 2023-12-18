@@ -63,11 +63,12 @@
                     return [];
                 });
         }
+      
         
 
   let currentIndex = 0;
   let items;
-
+      
   const updateContent = (valor) => {
     const conteudoAula = document.querySelector("#conteudo-aula");
     const valorVariavel = valor;
@@ -120,11 +121,32 @@
 
     // elemento para aplicar uma opacidade e efeito de transição na hora de trocar o conteúdo exibido na tela de aula
     setTimeout(() => {
-        setTimeout(() => {conteudoAula.innerHTML = `<p>${items[currentIndex].conteudo}</p>`
-        conteudoAula.querySelector('p').style.opacity = 1;
-    }, 300);
-        conteudoAula.querySelector('p').style.opacity = 0;
-    }, 200);
+      setTimeout(() => {
+          conteudoAula.innerHTML = `<h3>${items[currentIndex].titulo}</h3><p>${items[currentIndex].conteudo}</p><img id="imagem_ensino" src=${items[currentIndex].imagem}>`;
+          
+          var img = document.getElementById("imagem_ensino");
+  
+          // Essa parte faz uma verificação para ver se o "src" da imagem está vazio ou não, e é adicionado um evento onload na imagem para que a verificação seja feita após o carregamento
+          img.onload = function() {
+              if (img.src == "" || img.src == undefined) {
+                  img.style.display = 'none';
+              } else {
+                  img.style.display = 'block';
+              }
+              conteudoAula.querySelector('p').style.opacity = 1;
+          };
+  
+          // Se ocorrer um erro ao carregar a imagem, trata o evento para garantir que a verificação seja feita
+          img.onerror = function() {
+              img.style.display = 'none';
+              conteudoAula.querySelector('p').style.opacity = 1;
+          };
+  
+      }, 300);
+  
+      conteudoAula.querySelector('p').style.opacity = 0;
+  }, 200);
+  
     
     
   const progress = ((currentIndex + 1) / items.length) * 100;
@@ -135,7 +157,7 @@
   items.forEach((item, index) => {
     const navbarCircle = document.createElement("div");
     navbarCircle.classList.add("navbar-circle");
-    navbarCircle.textContent = `${index + 1}`;
+    navbarCircle.textContent = `0${index + 1}`;
     navbarCircle.addEventListener("click", () => jumpToItem(index));
     navbar.appendChild(navbarCircle);
   });

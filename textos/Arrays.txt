@@ -1,22 +1,23 @@
 [
   {
-    "titulo": "Introdução",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "titulo": "Um Gato na Caixa: Um pouco sobre Arrays",
+    "conteudo": "Se você se interessa por programação (o que é uma certeza, se não nem faria sentido estar aqui), com certeza já deve ter ouvido falar sobre arrays, mas afinal o que são?"
   },
   {
-    "titulo": "Seção 2",
-    "conteudo": "teste"
+    "titulo": "Analogia: cat in the box",
+    "conteudo": "Imagine uma caixa onde os gatos estão alinhados em uma fila. Cada gato tem um número específico, como se fosse um bilhete de entrada. Você pode pegar rapidamente o gato certo, simplesmente olhando para o número dele na fila, e sim, é simples assim.",
+    "imagem": "assets/image/cat-arrays-02.jpg"
   },
   {
-    "titulo": "Seção 3",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "titulo": "Mestres da alocação",
+    "conteudo": "Arrays alocam seus elementos de maneira contígua na memória, permitindo um acesso eficiente usando índices. Isso significa que, ao acessar um elemento, o sistema sabe exatamente onde encontrá-lo em termos de posição de memória."
   },
   {
-    "titulo": "Seção 4",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "titulo": "Vantagens e Desvantagens",
+    "conteudo": "A principal vantagem dos arrays é o acesso direto e eficiente aos elementos por meio de índices. Se você souber o índice do elemento desejado, pode recuperá-lo rapidamente. <br> Todavia, A inserção ou remoção de elementos no meio de um array pode ser ineficiente, pois todos os elementos subsequentes precisam ser deslocados para abrir espaço ou preencher o espaço deixado."
   },
   {
-    "titulo": "Seção 5",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "titulo": "Uso comum:",
+    "conteudo": "Arrays são frequentemente usados em situações onde o tamanho é conhecido antecipadamente e a eficiência de acesso é crucial, como em operações matriciais ou listas de tamanho fixo."
   }
 ]

@@ -1,22 +1,19 @@
 [
   {
-    "titulo": "Introdução",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "titulo": "O que são Heaps?",
+    "conteudo": "Heaps são árvores parcialmente ordenadas onde o valor de cada nó é menor ou igual aos valores de seus filhos. Em um heap máximo, o nó no topo tem o maior valor."
   },
   {
-    "titulo": "Seção 2",
-    "conteudo": "teste"
+    "titulo": "Analogia, gatos e heaps (gatos hippies)",
+    "conteudo": "Visualize gatos empilhados em uma pirâmide, onde cada gato tem um valor associado. A ordem dos gatos na pirâmide é determinada pelo valor que possuem. O gato no topo tem o maior valor. Essa estrutura facilita a rápida identificação do gato com o valor mais alto.",
+    "imagem" : "assets/image/cat-arrow.jpg"
   },
   {
-    "titulo": "Seção 3",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "titulo": "Onde se é utilizado:",
+    "conteudo": "Heaps são frequentemente utilizados em algoritmos de ordenação eficientes, como o Heapsort fora isso Heaps são frequentemente usados na implementação de filas de prioridade, onde o elemento com a prioridade mais alta (maior valor em um Heap Máximo ou menor valor em um Heap Mínimo) é processado primeiro."
   },
   {
-    "titulo": "Seção 4",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  {
-    "titulo": "Seção 5",
-    "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "titulo": "Operações eficientes!",
+    "conteudo": "Heaps suportam operações eficientes, como encontrar o máximo ou mínimo, inserção e remoção, todas em tempo logarítmico. Essa eficiência os torna valiosos em cenários onde a rapidez na identificação de extremos é crucial."
   }
 ]

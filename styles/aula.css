@@ -1,5 +1,5 @@
 .aula {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/wallpapers/the-city.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../assets/wallpapers/the-city.jpg);
     width: 100%;
     position: relative;
     background-size: cover;
@@ -80,7 +80,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 .container__ensinamentos {
@@ -108,7 +108,12 @@
 
 }
 
+.aula__ensinamentos > h3 {
+    margin-top: 3rem;
+}
+
 .aula__ensinamentos > p {
+    padding: 2rem;
     opacity: 1; /* Adicionado para definir a opacidade inicial */
     transition: opacity 0.3s ease; /* Adicionado para definir a transição de opacidade */
     font-family: var(--fonte-terciaria);
@@ -116,6 +121,14 @@
     font-weight: 500;
     color: var(--branco);
     font-size: 1rem;
+}
+
+.aula__ensinamentos > img {
+    margin-left: 29%;
+    width: 20vw;
+    height: 30vh;
+    
+    border-radius: 10px;
 }
 
 .aula__progresso {
