@@ -42,7 +42,7 @@
     document.addEventListener("DOMContentLoaded", function () {
 
         function lerArquivo(urlDaEstrutura) {
-            const urlDoArquivo = `../textos/${urlDaEstrutura}`;
+            const urlDoArquivo = `/textos/${urlDaEstrutura}`;
         
             return fetch(urlDoArquivo)
                 .then(response => {
