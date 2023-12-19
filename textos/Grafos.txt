@@ -1,0 +1,19 @@
+[
+  {
+    "titulo": "Grafos? gratos? gatos?",
+    "conteudo": "Brincadeiras à parte, Grafos representam relações entre elementos, onde os nós são conectados por arestas. Podem ser direcionados (arestas têm uma direção) ou não direcionados... Relaxe, dá pra entender"
+  },
+  {
+    "titulo": "Uma analogia",
+    "conteudo": "Considere gatos como nós em um grafo, e os caminhos entre eles representam conexões. Cada conexão pode ter um peso (distância) associado. Os grafos podem ser direcionados ou não direcionados. Para encontrar um gato específico, você segue os caminhos, navegando pelos nós interconectados.",
+    "imagem": "assets/image/grafos-gatos.jpg"
+  },
+  {
+    "titulo": "Onde é utilizado?",
+    "conteudo": "Grafos são amplamente usados em modelagem de redes, sistemas de recomendação, algoritmos de busca em largura (BFS) e algoritmos de busca em profundidade (DFS). <br> Fora isso, alguns algoritmos como o algoritmo de Dijkstra (encontrar o caminho mais curto) e o algoritmo de Kruskal (encontrar a árvore geradora mínima) são exemplos de aplicação prática de grafos ponderados."
+  },
+  {
+    "titulo": "Ciclos e Acíclicos? (mas o que isso tem haver com gatos)",
+    "conteudo": "Grafos podem ser cíclicos (contendo ciclos) ou acíclicos (sem ciclos). Grafos acíclicos são comuns em representações de hierarquias, enquanto grafos cíclicos são frequentemente usados em modelagem de sistemas dinâmicos. <br> É, para sua infelicidade isso não tem nada haver com gatos... eu acho"
+  }
+]

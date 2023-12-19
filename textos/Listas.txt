@@ -1,0 +1,28 @@
+[
+  {
+    "titulo": "Um pouco sobre Listas",
+    "conteudo": "As Listas são estruturas de dados fundamentais em ciência da computação e programação. Agora imagine uma lista de gat- ... ah, deixa pra lá, eu explico no próximo"
+  },
+  {
+    "titulo": "Uma analogia com listas",
+    "conteudo": "Agora, pense em um gato escrevendo em um papel e passando para o próximo gato (isso nunca aconteceria, mas tá valendo). Cada gato tem um pedaço de papel com informações e o endereço do próximo gato. Para encontrar uma informação específica, você segue os gatos, lendo o papel de um para o outro até encontrar o que procura, legal né?"
+  },
+  {
+    "titulo": "Uma boa vantagem: Flexibilidade na Inserção/Remoção",
+    "conteudo": "Uma das principais vantagens das listas ligadas é a flexibilidade na inserção e remoção de elementos. Adicionar ou remover um elemento envolve simplesmente ajustar os ponteiros, sem a necessidade de reorganizar toda a estrutura."
+  },
+  {
+    "titulo": "Mas calma lá! você tem que seguir a sequência",
+    "conteudo": "Apesar de tudo, em uma lista o acesso a elementos específicos requer percorrer a mesma sequencialmente. Se você quiser encontrar um elemento, começará do início da lista e seguirá os ponteiros até encontrar o desejado, não pode começar do meio.",
+    "imagem" : "assets/image/um-gato-correndo.jpg"
+  },
+  {
+    "titulo": "Operações comuns em listas:",
+    "conteudo": "Inserção: Adicionar um novo elemento à lista.<br> Remoção: Excluir um elemento da lista. <br> Acesso: Recuperar o valor de um elemento específico (por índice em arrays, ou navegando pelos nós em listas ligadas). <br> Pesquisa: Encontrar a posição de um elemento com base em seu valor. <br> Ordenação: Organizar os elementos em ordem específica."
+  },
+  
+   {
+    "titulo": "Utilizações comuns das listas",
+    "conteudo": "Listas são utilizadas em situações onde o tamanho dos dados é dinâmico ou desconhecido, sendo cruciais na implementação de estruturas mais complexas, como pilhas e filas. Sua versatilidade as torna ideais para manipular dados sequenciais em diversas aplicações."
+   }
+]

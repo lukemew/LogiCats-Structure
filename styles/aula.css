@@ -1,0 +1,189 @@
+.aula {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../assets/wallpapers/the-city.jpg);
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    z-index: -1;
+}
+
+.cabecalho-aula {
+    margin: 0 auto;
+    width: 98%;
+    padding-bottom: 1rem;
+}
+
+.cabecalho-aula__logo {
+    border: 1px solid var(--ciano-borda);
+}
+
+.aula__link {
+    border: 1px solid var(--ciano-borda);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  float: left;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  flex-wrap: nowrap;
+  position: absolute;
+  left: 14%;
+  top: 25%;
+  background-color: rgba(0, 0, 0, 0.808);
+  border-radius: 10px;
+  padding: .4em;
+}
+
+.navbar-circle {
+    font-family: var(--fonte-principal);
+    min-width: 42px;
+    min-height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--ciano-borda);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: var(--ciano);
+}
+
+.navbar-circle:hover {
+    box-shadow: inset 0 0 8px 0 var(--vermelho-borda), 0 0 8px 0 var(--vermelho-borda);
+    border-color: var(--vermelho-borda);
+    transition: 0.2s;
+}
+
+.aula__estrutura {
+    text-align: center;
+    text-wrap: nowrap;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: var(--fonte-principal);
+    backdrop-filter: brightness(25%);
+    border: 1px solid var(--ciano-borda);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: .5rem 4rem;
+    color: var(--ciano);
+}
+
+.container {
+    margin: 8rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+.container__ensinamentos {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 60%;
+    max-height: 80vh;
+}
+
+.aula__ensinamentos {
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: var(--fonte-terciaria);
+    backdrop-filter: brightness(25%);
+    border: 1px solid var(--ciano-borda);
+    border-radius: 5px;
+    margin: 2rem auto;
+    padding: 1rem 4rem;
+    color: var(--ciano);
+    display: block;
+    box-sizing: border-box;
+    min-width: 60vw;
+    min-height: 60vh;
+
+}
+
+.aula__ensinamentos > h3 {
+    margin-top: 3rem;
+}
+
+.aula__ensinamentos > p {
+    padding: 2rem;
+    opacity: 1; /* Adicionado para definir a opacidade inicial */
+    transition: opacity 0.3s ease; /* Adicionado para definir a transição de opacidade */
+    font-family: var(--fonte-terciaria);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--branco);
+    font-size: 1rem;
+}
+
+.aula__ensinamentos > img {
+    margin-left: 29%;
+    width: 20vw;
+    height: 30vh;
+    
+    border-radius: 10px;
+}
+
+.aula__progresso {
+    margin: 1rem auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+progress {
+    width: 80%;
+}
+
+.container__seletores {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.aula__botao {
+    user-select: none;
+    font-size: .8rem;
+    backdrop-filter: brightness(25%);
+    border: 1px solid var(--ciano-borda);
+    border-radius: 25px;
+    padding: .5rem 1rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--ciano);
+}
+
+.aula__botao:hover {
+    transition: .2s;
+    cursor: pointer;
+    border: 1px solid var(--vermelho-borda);
+}
+
+.rodape-aula__logo {
+    border: 1px solid var(--ciano-borda);
+    display: flex;
+}
+
+.rodape-aula h2 {
+    font-family: var(--fonte-terciaria);
+    color: var(--ciano);
+}
+
+.rodape-aula img {
+    width: 25%;
+}
+
+.not-seen {
+    color: red;
+    
+ }
+ 
+ .not-seen.navbar-circle{
+    border: 1px solid var(--vermelho-borda);
+ }

@@ -1,12 +1,18 @@
+/* Estilos para a seção de estruturas */
 .estruturas {
   background-size: cover;
-  min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(../assets/wallpapers/cats_on_the_roof.jpg);
-  display: flexbox;
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../assets/wallpapers/cat_on_the_window.jpg);
+  display: flex;
+  flex-direction: column;
 }
 
+/* Estilos para o cabeçalho da seção de estruturas */
 .estruturas-cabecalho {
+  -webkit-text-stroke: 1px var(--roxo-borda-letra);
+  font-family: var(--fonte-principal);
+  font-style: italic;
   backdrop-filter: brightness(25%);
   text-align: center;
   color: var(--ciano);
@@ -21,34 +27,47 @@
   font-size: 1.5rem;
 }
 
+/* Estilos para a grade de itens na seção de estruturas */
 .estruturas-itens {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin: 3rem auto;
-  padding: 0 7em;
   width: 100%;
-  max-width: 1200px;
+  max-width: 120vw;
   backdrop-filter: brightness(25%);
   text-align: center;
   color: var(--ciano);
-  width: 70%;
+  width: 50%;
   margin: 3rem auto;
   border: 2px solid var(--roxo-borda);
   border-radius: 10px;
   padding: 1.5em 7em;
 }
 
+.estruturas-itens h2 {
+  font-style: italic;
+  -webkit-text-stroke: 1px var(--roxo-borda-letra);
+  margin: 0.7em 0 0.2em 0;
+}
+
+.estruturas-itens p {
+  text-align: left;
+}
+
+/* Estilos para os itens na seção de estruturas */
 .estruturas__item img {
+  border: 1px solid var(--ciano);
   width: 100%;
-  height: 150px;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  padding: 10px;
+  padding: 4px;
 }
 
 .estruturas__item {
+  font-family: var(--fonte-principal);
+  font-style: italic;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -58,6 +77,27 @@
   background-color: rgba(72, 8, 66, 0.5);
   border: 1px solid #ce0aee;
   border-radius: 10px;
-  padding: 1em;
+  padding: 0.7em;
   backdrop-filter: brightness(29%);
+}
+
+/* Estilos para o efeito hover nos itens da seção de estruturas */
+.estruturas__item:hover {
+  box-shadow: inset 0 0 5px 0 #f1b, 0 0 12px 0 #f1b;
+  transition: 0.4s;
+}
+
+.estruturas__item img:hover {
+  box-shadow: inset 0 0 12px 0 #f1b, 0 0 12px 0 #f1b;
+  transition: 0.4s;
+  border: 1px solid var(--vermelho-borda);
+  cursor: pointer;
+}
+
+.estruturas__item:hover {
+  text-wrap: nowrap;
+  transition: 0.2s;
+  cursor: pointer;
+  color: var(--vermelho-borda);
+  padding: 1em;
 }

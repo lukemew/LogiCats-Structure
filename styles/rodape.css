@@ -1,0 +1,16 @@
+/* Estilos para a seção de rodapé */
+.rodape {
+    display: flex;
+  }
+  
+  /* Estilos para os títulos (h2) no rodapé */
+  .rodape h2 {
+    font-family: var(--fonte-terciaria);
+    color: var(--ciano);
+  }
+  
+  /* Estilos para as imagens no rodapé */
+  .rodape img {
+    width: 25%;
+  }
+  

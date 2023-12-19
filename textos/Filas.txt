@@ -1,0 +1,25 @@
+[
+  {
+    "titulo": "O básico sobre filas",
+    "conteudo": "Lidamos com filas em toda a nossa vida, agora até na hora de programar? Mas afinal, o que significa filas na programação?",
+    "imagem": "assets/image/fila-cats.jpg"
+  },
+  {
+    "titulo": "Uma breve analogia",
+    "conteudo": "Pense em gatos alinhados em uma fila para receber comida. <br> O primeiro gato que chega é o primeiro a ser servido (FIFO - First In, First Out). <br> Se um gato chegar mais tarde, ele se junta à parte traseira da fila. Para encontrar um gato específico, você começa no início da fila e avança sequencialmente..."
+  },
+  {
+    "titulo": "O que é FIFO?",
+    "conteudo": "FIFO (First In, First Out): O primeiro elemento adicionado a uma fila é o primeiro a ser removido. Isso é útil em situações onde a ordem de chegada é significativa, como no controle de tarefas em um sistema operacional ou no gerenciamento de requisições em um servidor.",
+    "imagem" : "assets/image/enfileirados-cat.jpg"
+  },
+  {
+    "titulo": "Uso Comum",
+    "conteudo": "Filas são comuns em sistemas de processamento de pedidos, algoritmos de escalonamento de tarefas e em situações que exigem tratamento sequencial, como por exemplo, na impressão de documentos de uma impressora"
+  },
+  {
+    "titulo": "Operações comuns em Filas",
+    "conteudo": "Enfileirar (enqueue): Adicionar um elemento ao final da fila. <br> Desenfileirar (dequeue): Remover o elemento do início da fila. <br> Frente (front): Obter o elemento do início da fila sem removê-lo. <br> Tamanho: Obter o número de elementos na fila."
+  }
+  
+]
