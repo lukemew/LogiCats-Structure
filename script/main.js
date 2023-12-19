@@ -1,10 +1,10 @@
 
      // Função para navegar para a página aula.html com o título correspondente
      function navegarParaAula(titulo) {
-        // Modifique a variável conforme necessário
+        // é definido uma let valorVariavel para manipulação futura
         let valorVariavel;
     
-        // Defina o valor da variável com base no título
+        //  um switch case para identificar o id do botao que foi clicado e assim definir um valor de variavel para el
         switch (titulo.toLowerCase()) {
           case 'pilhas':
             valorVariavel = 1;
@@ -30,23 +30,25 @@
           case 'grafos':
             valorVariavel = 8;
             break;
-          // Adicione mais casos conforme necessário...
           default:
             valorVariavel = 0; // Valor padrão
         }
     
-        // Navegue para aula.html com o título e a variável personalizada
+        // Navega para aula.html com o título e a variável personalizada
         window.location.href = `aula.html?titulo=${titulo}&valorVariavel=${valorVariavel}`;
       }
       
+      // função para carregar o conteúdo do DOM como um todo
     document.addEventListener("DOMContentLoaded", function () {
 
+        // essa função irá receber como parâmetro de um switch a url de um dos textos de acordo com o nome da estrutura que estiver sendo exibida
         function lerArquivo(urlDaEstrutura) {
             const urlDoArquivo = `/textos/${urlDaEstrutura}`;
-        
+
+            // a mesma irá retornar uma promessa, indo atrás da url do arquivo
             return fetch(urlDoArquivo)
                 .then(response => {
-                    if (!response.ok) {
+                    if (!response.ok) { // se der erro, vai exibir no console e com o status do erro
                         throw new Error(`Erro ao carregar o arquivo: ${response.status}`);
                     }
                     return response.json(); // Aqui, response.json() analisa a resposta como JSON
@@ -54,7 +56,7 @@
                 .then(itemsPilhas => {
                     console.log('Conteúdo do arquivo:', itemsPilhas);
         
-                    // Retorne o array para que ele possa ser utilizado após o encadeamento de promises
+                    // Retorna o array para que ele possa ser utilizado após o encadeamento de promises
                     return itemsPilhas;
                 })
                 .catch(error => {
@@ -65,8 +67,9 @@
         }
       
         
-
+  // é criado a variavel currentIndex para identificar qual a posição atual do que está sendo exibido
   let currentIndex = 0;
+  // a variável items receberá futuramente os componentes vindo da promessa anterior, e os armazenará em formato de arrays
   let items = [0, 0, 0, 0, 0];
       
   const updateContent = (valor) => {
@@ -129,8 +132,10 @@
           // Essa parte faz uma verificação para ver se o "src" da imagem está vazio ou não, e é adicionado um evento onload na imagem para que a verificação seja feita após o carregamento
           img.onload = function() {
               if (img.src == "" || img.src == undefined) {
+                // se nao houver imagem, nao ira exibir nada
                   img.style.display = 'none';
               } else {
+                // se houver imagen, ira exibir
                   img.style.display = 'block';
               }
               conteudoAula.querySelector('p').style.opacity = 1;
@@ -143,18 +148,21 @@
           };
   
       }, 300);
-  
+      
       conteudoAula.querySelector('p').style.opacity = 0;
   }, 200);
 
   
-  
+  // criado uma variavel para manipular item com id navbar
   const navbar = document.querySelector("#navbar");
+  // define um espaço vazio na navbar para que a mesma nao fique se repetindo
   navbar.innerHTML = "";
   items.forEach((item, index) => {
+    // para cada um dos items, irá fazer esse processo, um novo botão na navbar, e etc
     const navbarCircle = document.createElement("div");
     navbarCircle.classList.add("navbar-circle");
     navbarCircle.textContent = `0${index + 1}`;
+    // caso ela receba um clique, irá chamar a função jumpToItem passando o parâmetro do número que foi clicado para que possa avançar para o mesmo
     navbarCircle.addEventListener("click", () => jumpToItem(index));
 
     // Adiciona a classe "not-seen" aos itens não vistos
@@ -189,25 +197,31 @@
       return "Conteúdo padrão";
   }
 };
-    
-const showNextItem = () => {
+
+  // função para retornar 1 item na navegação (Anterior)
+    const showNextItem = () => {
     currentIndex = Math.min(currentIndex + 1, items.length - 1);
     updateContent(valorVariavel);
   };
 
+  // função para avançar 1 item na navegação (Próximo)
   const showPreviousItem = () => {
     currentIndex = Math.max(currentIndex - 1, 0);
     updateContent(valorVariavel);
   };
 
+  // função para pular para um determinado número na navbar
   const jumpToItem = (index) => {
     currentIndex = Math.min(Math.max(parseInt(index), 0), items.length - 1);
     updateContent(valorVariavel);
   };
 
+  // cria uma variavel para o botao de retornar
   const backButton = document.querySelector("#back-button");
+   // cria uma variavel para o botao de avançar
   const nextButton = document.querySelector("#next-button");
 
+  // se o botão for clicado, irá chamar as funções devidas
   backButton.addEventListener("click", showPreviousItem);
   nextButton.addEventListener("click", showNextItem);
 
@@ -221,6 +235,7 @@ const showNextItem = () => {
   // Exibe o conteúdo personalizado na inicialização
   document.querySelector("#nome-estrutura").textContent = nomeEstrutura;
 
+  // atualiza o conteúdo da página de acordo com o valor da variável
   updateContent(valorVariavel);
 });
 
