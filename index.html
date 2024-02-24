@@ -1,142 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LogiCats</title>
+    <link rel="stylesheet" href="reset.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:ital,wght@0,500;0,700;1,700&family=Radio+Canada:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/cat_icon_02.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>LogiCats</title>
-  <link rel="stylesheet" href="reset.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:ital,wght@0,500;0,700;1,700&family=Radio+Canada:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="assets/icons/cat_icon_02.png" type="image/x-icon">
-</head>
+  <body>
+    <header class="cabecalho">
+      <div class="cabecalho-logo">
+        <img
+          class="cabecalho-logo__imagem"
+          src="assets/icons/cat_icon_02.png"
+          alt="logo gatinho"
+        />
+        <img
+          class="cabecalho-logo__logicats"
+          src="assets/LogiCats_logo_02.png"
+          alt="Logicats"
+        />
+      </div>
 
-<body>
-  <header class="cabecalho">
-    <div class="cabecalho-logo">
-      <img class="cabecalho-logo__imagem" src="assets/icons/cat_icon_02.png" alt="logo gatinho">
-      <img class="cabecalho-logo__logicats" src="assets/LogiCats_logo_02.png" alt="Logicats">
-    </div>
+      <div class="cabecalho-navigation">
+        <a class="cabecalho-navigation__link" href="./sobre.html">Sobre nós</a>
+        <a class="cabecalho-navigation__link" href="index.html">Inicio</a>
+        <a class="cabecalho-navigation__link" href="#menu">Menu</a>
+      </div>
 
-    <div class="cabecalho-navigation">
-      <a class="cabecalho-navigation__link" href="./sobre.html">Sobre nós</a>
-      <a class="cabecalho-navigation__link" href="index.html">Inicio</a>
-      <a class="cabecalho-navigation__link" href="#menu">Menu</a>
-    </div>
-
-    <div class="cabecalho-mainText">
-      <h2 class="cabecalho__primeiro-texto">Seja bem vindo, viajante!</h2>
-      <h2 class="cabecalho__ultimo-texto"> Aqui a programação encontra a nostalgia e os gatinhos serão os mestres de cerimônia.</h2>
-    </div>
-
-  </header>
-
-  <section class="introducao">
-    <div class="introducao-cabecalho">
-      <h1 class="introducao-cabecalho__texto">
-        INTRODUÇÃO
-      </h1>
-    </div>
-
-    <div class="introducao-textos">
-      <div class="introducao__texto">
-        <h2>O QUE SÃO ESTRUTURAS
-          DE DADOS?
+      <div class="cabecalho-mainText">
+        <h2 class="cabecalho__primeiro-texto">Seja bem vindo, viajante!</h2>
+        <h2 class="cabecalho__ultimo-texto">
+          Aqui a programação encontra a nostalgia e os gatinhos serão os mestres
+          de cerimônia.
         </h2>
-        <p class="introducao__info">
-          Estruturas de dados referem-se a maneiras organizadas de armazenar e gerenciar dados em um programa ou sistema. <br> <br>
-          Elas definem a forma como os dados são organizados, acessados e manipulados, oferecendo eficiência e otimização para diferentes operações.
-        </p>
       </div>
-      <div class="introducao__texto">
-        <h2>QUAIS AS ESTRUTURAS
-          DE DADOS?
-        </h2>
-        <div class="introducao__estruturas">
-          <p>1. Arrays </p> 
-          <p>2. Pilhas (Stacks)</p> 
-          <p>3. Filas (Queues) </p>
-          <p>4. Linked Lists (Listas Encadeadas) </p>
-          <p>5. Árvores </p>
-          <p>6. Grafos </p>
-          <p>7. Tabelas Hash (Hash Tables) </p>
-          <p>8. Heaps</p>
-      </div>
-      </div>
-    </div>
-    <div class="introducao-rodape">
-      <h2>AFINAL, O QUE GATOS TEM HAVER
-        COM ESTRUTURA DE DADOS?
-      </h2>
-      <p>
-        Explorar estruturas de dados é como observar as relações entre gatos: enquanto cada felino representa um conceito, suas interações formam um elegante conjunto de lições, transformando a jornada do aprendizado em uma dança de compreensão felina.  <br>
-        Portanto, observando as relações e ações dos gatinhos, podemos compará-las às gatastróficas estruturas de dados e, junto com a nostalgia fazer você entender melhor seus conceitos.
-      </p>
-    </div>
-  </section>
+    </header>
 
-  <section class="estruturas">
-    <div class="estruturas-cabecalho">
-      <h1 class="estruturas-cabecalho_texto">
-        ESTRUTURAS DE DADOS
-      </h1>
-    </div>
-    <div id="menu" class="estruturas-itens">
-      <div class="estruturas__item" onclick="navegarParaAula('pilhas')">
-        <img src="./assets/image/cats-pilha.jpg" alt="Pilhas">
-        <h2>Pilhas</h2>
+    <section class="introducao">
+      <div class="introducao-cabecalho">
+        <h1 class="introducao-cabecalho__texto">INTRODUÇÃO</h1>
       </div>
-      <div class="estruturas__item" onclick="navegarParaAula('filas')">
-        <img src="./assets/image/fila-cats.jpg" alt="Filas">
-        <h2>Filas</h2>
-      </div>
-      <div class="estruturas__item" onclick="navegarParaAula('arvores')">
-        <img src="./assets/image/cat-arvores.jpg" alt="Árvores">
-        <h2>Árvores</h2>
-      </div>
-      <div class="estruturas__item" onclick="navegarParaAula('arrays')">
-        <img src="./assets/image/cat-arrays.jpg" alt="Arrays">
-        <h2>Arrays</h2>
-      </div>
-      <div class="estruturas__item" onclick="navegarParaAula('listas')">
-        <img src="./assets/image/cat-listing.jpg" alt="Listas">
-        <h2>Listas</h2>
-      </div>
-      <div class="estruturas__item" onclick="navegarParaAula('heaps')">
-        <img src="./assets/image/heaps-cat.jpg" alt="Heaps">
-        <h2>Heaps</h2>
-      </div>
-      <div class="estruturas__item" onclick="navegarParaAula('hash-tables')">
-        <img src="./assets/image/cats-hash-table.jpg" alt="Hash Tables">
-        <h2>Hash Tables</h2>
-      </div>
-      <div class="estruturas__item" onclick="navegarParaAula('grafos')">
-        <img src="./assets/image/cat-grafos.jpg" alt="Grafos">
-        <h2>Grafos</h2>
-      </div>
-      <!-- Adicione mais itens conforme necessário... -->
-    </div>
 
-    <footer class="rodape">
-      <div class="rodape-logo cabecalho-logo">
-        <img class="cabecalho-logo__imagem" src="assets/LogiCats_logo_02.png" alt="Logicats">
-      <div class="rodape-texto">
-        <h2>Todos os direitos reservados.</h2>
-        <div class="rodape-textos__icons">
+      <div class="introducao-textos">
+        <div class="introducao__texto">
+          <h2>O QUE SÃO ESTRUTURAS DE DADOS?</h2>
+          <p class="introducao__info">
+            Estruturas de dados referem-se a maneiras organizadas de armazenar e
+            gerenciar dados em um programa ou sistema. <br />
+            <br />
+            Elas definem a forma como os dados são organizados, acessados e
+            manipulados, oferecendo eficiência e otimização para diferentes
+            operações.
+          </p>
+        </div>
+        <div class="introducao__texto">
+          <h2>QUAIS AS ESTRUTURAS DE DADOS?</h2>
+          <div class="introducao__estruturas">
+            <p>1. Arrays</p>
+            <p>2. Pilhas (Stacks)</p>
+            <p>3. Filas (Queues)</p>
+            <p>4. Linked Lists (Listas Encadeadas)</p>
+            <p>5. Árvores</p>
+            <p>6. Grafos</p>
+            <p>7. Tabelas Hash (Hash Tables)</p>
+            <p>8. Heaps</p>
+          </div>
         </div>
       </div>
-      <div class="rodape-catIcon">
+      <div class="introducao-rodape">
+        <h2>AFINAL, O QUE GATOS TEM HAVER COM ESTRUTURA DE DADOS?</h2>
+        <p>
+          Explorar estruturas de dados é como observar as relações entre gatos:
+          enquanto cada felino representa um conceito, suas interações formam um
+          elegante conjunto de lições, transformando a jornada do aprendizado em
+          uma dança de compreensão felina. <br />
+          Portanto, observando as relações e ações dos gatinhos, podemos
+          compará-las às gatastróficas estruturas de dados e, junto com a
+          nostalgia fazer você entender melhor seus conceitos.
+        </p>
       </div>
+    </section>
+
+    <section class="estruturas">
+      <div class="estruturas-cabecalho">
+        <h1 class="estruturas-cabecalho_texto">ESTRUTURAS DE DADOS</h1>
       </div>
-    </footer>
-  
-  </section>
+      <div id="menu" class="estruturas-itens">
+        <div class="estruturas__item" onclick="navegarParaAula('pilhas')">
+          <img src="./assets/image/cats-pilha.jpg" alt="Pilhas" />
+          <h2>Pilhas</h2>
+        </div>
+        <div class="estruturas__item" onclick="navegarParaAula('filas')">
+          <img src="./assets/image/fila-cats.jpg" alt="Filas" />
+          <h2>Filas</h2>
+        </div>
+        <div class="estruturas__item" onclick="navegarParaAula('arvores')">
+          <img src="./assets/image/cat-arvores.jpg" alt="Árvores" />
+          <h2>Árvores</h2>
+        </div>
+        <div class="estruturas__item" onclick="navegarParaAula('arrays')">
+          <img src="./assets/image/cat-arrays.jpg" alt="Arrays" />
+          <h2>Arrays</h2>
+        </div>
+        <div class="estruturas__item" onclick="navegarParaAula('listas')">
+          <img src="./assets/image/cat-listing.jpg" alt="Listas" />
+          <h2>Listas</h2>
+        </div>
+        <div class="estruturas__item" onclick="navegarParaAula('heaps')">
+          <img src="./assets/image/heaps-cat.jpg" alt="Heaps" />
+          <h2>Heaps</h2>
+        </div>
+        <div class="estruturas__item" onclick="navegarParaAula('hash-tables')">
+          <img src="./assets/image/cats-hash-table.jpg" alt="Hash Tables" />
+          <h2>Hash Tables</h2>
+        </div>
+        <div class="estruturas__item" onclick="navegarParaAula('grafos')">
+          <img src="./assets/image/cat-grafos.jpg" alt="Grafos" />
+          <h2>Grafos</h2>
+        </div>
+        <!-- Adicione mais itens conforme necessário... -->
+      </div>
 
-  
-  <script src="./script/main.js">
-  </script>
+      <footer class="rodape">
+        <div class="rodape-logo cabecalho-logo">
+          <img
+            class="cabecalho-logo__imagem"
+            src="assets/LogiCats_logo_02.png"
+            alt="Logicats"
+          />
+          <div class="rodape-texto">
+            <h2>Todos os direitos reservados.</h2>
+            <div class="rodape-textos__icons"></div>
+          </div>
+          <div class="rodape-catIcon"></div>
+        </div>
+      </footer>
+    </section>
 
-</body>
-
+    <script src="./script/main.js"></script>
+  </body>
 </html>
