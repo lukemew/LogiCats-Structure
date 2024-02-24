@@ -12,5 +12,5 @@ Os gatos são conhecidos por sua curiosidade, agilidade e capacidade de resolver
 ## Autores
 
 - [Vinicius Samuel](https://www.github.com/vini-21samuel)
-- - [Lucas Melo](https://www.github.com/lukemew)
+- [Lucas Melo](https://www.github.com/lukemew)
 - 
