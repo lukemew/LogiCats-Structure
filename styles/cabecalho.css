@@ -126,3 +126,18 @@
 span.azul {
   color: var(--ciano);
 }
+
+.cabecalho__iconeSobre {
+  display: flex;
+  justify-content: center;
+}
+
+.cabecalho__iconeSobre img {
+  margin: 2rem 2rem 0;
+}
+
+.cabecalho__iconeSobre img:hover {
+  transition: 0.3s;
+  border: 1px solid var(--roxo-borda);
+  border-radius: 50px;
+}

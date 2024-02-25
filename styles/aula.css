@@ -33,7 +33,7 @@
   margin: 2rem;
   flex-wrap: nowrap;
   position: absolute;
-  left: 14%;
+  left: 9%;
   top: 25%;
   background-color: rgba(0, 0, 0, 0.808);
   border-radius: 10px;
@@ -103,7 +103,7 @@
   padding: 1rem 4rem;
   color: var(--ciano);
   display: block;
-  box-sizing: border-box;
+
   min-width: 60vw;
   min-height: 60vh;
 }
