@@ -9,6 +9,7 @@
   flex-direction: column;
   border-bottom: 1px solid var(--roxo-borda);
   position: relative;
+  gap: 8vh;
 }
 
 /* Estilos para o cabeçalho da seção de introdução */
@@ -33,6 +34,7 @@
 /* Estilos para os textos na seção de introdução */
 .introducao-textos {
   flex-direction: column;
+  gap: 10vh;
   display: flex;
   align-items: center;
   justify-content: center; /* Coloca espaço entre os dois textos */
@@ -64,6 +66,7 @@
 
 .introducao__info,
 .introducao__estruturas {
+  -webkit-text-stroke: 5px var(--ciano-fundo);
   font-size: 1rem;
   font-family: var(--fonte-principal);
   backdrop-filter: brightness(25%);
@@ -104,14 +107,16 @@
   margin: 1rem auto;
   padding: 1rem 4rem;
   color: var(--ciano);
+  width: 60%;
 }
 
 .introducao-rodape > p {
+  -webkit-text-stroke: 5px var(--ciano-fundo);
   font-size: 1rem;
   font-family: var(--fonte-principal);
   backdrop-filter: brightness(25%);
   border: 1px solid var(--roxo-borda);
   border-radius: 10px;
-  color: var(--ciano);
-  padding: 1rem 1rem;
+  color: var(--ciano-letra);
+  padding: 2.5rem 1rem;
 }

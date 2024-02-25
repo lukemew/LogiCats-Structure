@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const urlDoArquivo = `/textos/${urlDaEstrutura}`;
 
     // a mesma irá retornar uma promessa, indo atrás da url do arquivo
-    return fetch(urlDoArquivo, { mode: "no-cors" })
+    return fetch(urlDoArquivo)
       .then((response) => {
         if (!response.ok) {
           // se der erro, vai exibir no console e com o status do erro

@@ -30,19 +30,19 @@
 /* Estilos para a grade de itens na seção de estruturas */
 .estruturas-itens {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
   width: 100%;
   max-width: 120vw;
   backdrop-filter: brightness(25%);
   text-align: center;
   color: var(--ciano);
-  width: 50%;
-  margin: 3rem auto;
+  width: 70%;
+  margin: 1rem auto 5rem;
   border: 2px solid var(--roxo-borda);
   border-radius: 10px;
-  padding: 1.5em 7em;
+  padding: 4em 4em;
 }
 
 .estruturas-itens h2 {
@@ -95,9 +95,7 @@
 }
 
 .estruturas__item:hover {
-  text-wrap: nowrap;
   transition: 0.2s;
   cursor: pointer;
   color: var(--vermelho-borda);
-  padding: 1em;
 }
