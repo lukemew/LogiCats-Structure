@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return response.json(); // Aqui, response.json() analisa a resposta como JSON
       })
       .catch((error) => {
-        console.error("Deu erro moral:", error);
+        console.error("Ocorreu um erro:", error);
         // Retorna um array vazio (ou outra coisa apropriada) em caso de erro
         return [];
       });
