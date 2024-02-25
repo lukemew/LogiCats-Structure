@@ -52,12 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return response.json(); // Aqui, response.json() analisa a resposta como JSON
       })
-      .then((itemsPilhas) => {
-        console.log("Conteúdo do arquivo:", itemsPilhas);
-
-        // Retorna o array para que ele possa ser utilizado após o encadeamento de promises
-        return itemsPilhas;
-      })
       .catch((error) => {
         console.error("Deu erro moral:", error);
         // Retorna um array vazio (ou outra coisa apropriada) em caso de erro
@@ -74,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const conteudoAula = document.querySelector("#conteudo-aula");
     const valorVariavel = valor;
     const nomeEstrutura = mostrarConteudoPersonalizado(valorVariavel);
-
+    history.pushState({}, null, `/index.html`);
     switch (nomeEstrutura) {
       case "Pilhas":
         lerArquivo("Pilhas.txt").then((result) => {
@@ -123,9 +117,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // elemento para aplicar uma opacidade e efeito de transição na hora de trocar o conteúdo exibido na tela de aula
     setTimeout(() => {
       setTimeout(() => {
-        conteudoAula.innerHTML = `<h3>${items[currentIndex].titulo}</h3><p>${items[currentIndex].conteudo}</p><img id="imagem_ensino" src=${items[currentIndex].imagem}>`;
+        conteudoAula.innerHTML = `<h3>${items[currentIndex].titulo}</h3><p id="texto_ensino">${items[currentIndex].conteudo}</p><img id="imagem_ensino" src=${items[currentIndex].imagem}>`;
 
         var img = document.getElementById("imagem_ensino");
+        var text = document.getElementById("texto_ensino");
+
+        // Verifica se o conteúdo do elemento de texto está vazio
+        if (text.textContent.trim() === "") {
+          text.style.display = "none";
+        } else {
+          text.style.display = "block";
+        }
 
         // Essa parte faz uma verificação para ver se o "src" da imagem está vazio ou não, e é adicionado um evento onload na imagem para que a verificação seja feita após o carregamento
         img.onload = function () {
@@ -233,4 +235,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // atualiza o conteúdo da página de acordo com o valor da variável
   updateContent(valorVariavel);
+
+  // window.onbeforeunload = function () {
+  //   // Exibe uma mensagem de confirmação (opcional)
+  //   return "Tem certeza de que deseja sair?";
+  // };
 });
