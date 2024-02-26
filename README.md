@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="https://github.com/vini-21samuel/Sistema-banc-rio-em-C/assets/130195075/a1d8f057-8b24-41ed-ab4c-7e451d7da5fb" alt="Logo">
+</p>
 
 # LogiCats 🐈 	&#127922;
 O LogiCats é um projeto educacional e divertido que utiliza ilustrações de gatos para ensinar de forma teórica as principais estruturas de dados. Seu objetivo é tornar o aprendizado desses conceitos complexos mais acessível e interessante, transformando a jornada do aprendizado em uma dança de compreensão felina. O nome "LogiCats" vem de "logi", que representa a lógica de programação, e "cats", que vem de gatos. Juntos, eles simbolizam a fusão entre a lógica da programação e algoritmo e a representação divertida e cativante dos gatos, criando uma abordagem única e envolvente para o ensino de estruturas de dados.
