@@ -1,7 +1,8 @@
 [
   {
     "titulo": "Grafos? gratos? gatos?",
-    "conteudo": "Brincadeiras à parte, Grafos representam relações entre elementos, onde os nós são conectados por arestas. Podem ser direcionados (arestas têm uma direção) ou não direcionados... Relaxe, dá pra entender"
+    "conteudo": "Brincadeiras à parte, Grafos representam relações entre elementos, onde os nós são conectados por arestas. Podem ser direcionados (arestas têm uma direção) ou não direcionados... Relaxe, dá pra entender",
+    "imagem": "assets/image/grafos.jpg"
   },
   {
     "titulo": "Uma analogia",
@@ -10,7 +11,8 @@
   },
   {
     "titulo": "Onde é utilizado?",
-    "conteudo": "Grafos são amplamente usados em modelagem de redes, sistemas de recomendação, algoritmos de busca em largura (BFS) e algoritmos de busca em profundidade (DFS). <br> Fora isso, alguns algoritmos como o algoritmo de Dijkstra (encontrar o caminho mais curto) e o algoritmo de Kruskal (encontrar a árvore geradora mínima) são exemplos de aplicação prática de grafos ponderados."
+    "conteudo": "Um exemplo muito simples de gráfico na vida real são as rotas que usamos em aplicativos de navegação ou mapas. Por exemplo, quando você traça uma rota no Google Maps, ele cria um gráfico que representa as estradas e os caminhos que você deve seguir para chegar ao seu destino. <br> <br> Outro bom exemplo é o das recomendações. Imagine que, no Facebook ou no Instagram, você recebe sugestões de contas que podem lhe interessar. Essas recomendações são baseadas em conexões entre você, seus amigos e outras contas. O gráfico aqui representa essas conexões, mostrando como as pessoas e as contas estão relacionadas entre si. Tudo está interligado!",
+    "imagem": "assets/image/gato-magico-grafos.jpg"
   },
   {
     "titulo": "Ciclos e Acíclicos? (mas o que isso tem haver com gatos)",

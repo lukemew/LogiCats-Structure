@@ -1,15 +1,18 @@
 [
   {
     "titulo": "Um pouco sobre Listas",
-    "conteudo": "As Listas são estruturas de dados fundamentais em ciência da computação e programação. Agora imagine uma lista de gat- ... ah, deixa pra lá, eu explico no próximo"
+    "conteudo": "As Listas são estruturas de dados fundamentais em ciência da computação e programação. Agora imagine uma lista de gat- ... ah, deixa pra lá, eu explico no próximo",
+    "imagem" : "assets/image/gatinho-listas.jpg"
   },
   {
     "titulo": "Uma analogia com listas",
-    "conteudo": "Agora, pense em um gato escrevendo em um papel e passando para o próximo gato (isso nunca aconteceria, mas tá valendo). Cada gato tem um pedaço de papel com informações e o endereço do próximo gato. Para encontrar uma informação específica, você segue os gatos, lendo o papel de um para o outro até encontrar o que procura, legal né?"
+    "conteudo": "Agora, pense em um gato escrevendo em um papel e passando para o próximo gato (isso nunca aconteceria, mas tá valendo). Cada gato tem um pedaço de papel com informações e o endereço do próximo gato. Para encontrar uma informação específica, você segue os gatos, lendo o papel de um para o outro até encontrar o que procura, legal né?",
+    "imagem": "assets/image/baixados-lista.jpeg"
   },
   {
     "titulo": "Uma boa vantagem: Flexibilidade na Inserção/Remoção",
-    "conteudo": "Uma das principais vantagens das listas ligadas é a flexibilidade na inserção e remoção de elementos. Adicionar ou remover um elemento envolve simplesmente ajustar os ponteiros, sem a necessidade de reorganizar toda a estrutura."
+    "conteudo": "Uma das principais vantagens das listas ligadas é a flexibilidade na inserção e remoção de elementos. Adicionar ou remover um elemento envolve simplesmente ajustar os ponteiros, sem a necessidade de reorganizar toda a estrutura.",
+    "imagem" : "assets/image/exemplo-lista.jpg"
   },
   {
     "titulo": "Mas calma lá! você tem que seguir a sequência",
@@ -20,9 +23,19 @@
     "titulo": "Operações comuns em listas:",
     "conteudo": "Inserção: Adicionar um novo elemento à lista.<br> Remoção: Excluir um elemento da lista. <br> Acesso: Recuperar o valor de um elemento específico (por índice em arrays, ou navegando pelos nós em listas ligadas). <br> Pesquisa: Encontrar a posição de um elemento com base em seu valor. <br> Ordenação: Organizar os elementos em ordem específica."
   },
+  {
+    "titulo": "Lista encadeada",
+    "conteudo": "Uma lista encadeada pode ser tanto uma lista encadeada simples (singly linked list) quanto uma lista encadeada dupla (doubly linked list). <br> <br> Na lista encadeada simples, cada nó possui um único ponteiro que aponta apenas para o próximo nó. Já na lista encadeada dupla, cada nó possui dois ponteiros: Um para o próximo nó e outro para o nó anterior. <br> <br> O primeiro elemento de uma lista encadeada é chamado de cabeça (head), e o último é chamado de cauda (tail). Os últimos elementos apontam para null, indicando que não apontam mais para nenhum outro nó. <br> <br> Muito texto, né!? A seguir veremos uma ilustração que lhe ajudará a entender melhor"
+  },
+  {
+    "titulo": "Ilustração: Lista Encadeada",
+    "conteudo": "",
+    "imagem" : "assets/animations/linked-list.gif"
+  },
   
    {
     "titulo": "Utilizações comuns das listas",
-    "conteudo": "Listas são utilizadas em situações onde o tamanho dos dados é dinâmico ou desconhecido, sendo cruciais na implementação de estruturas mais complexas, como pilhas e filas. Sua versatilidade as torna ideais para manipular dados sequenciais em diversas aplicações."
+    "conteudo": "Listas são utilizadas em situações onde o tamanho dos dados é dinâmico ou desconhecido, sendo cruciais na implementação de estruturas mais complexas, como pilhas e filas. Sua versatilidade as torna ideais para manipular dados sequenciais em diversas aplicações.",
+    "imagem": "assets/image/lista-ligada.jpg"
    }
 ]

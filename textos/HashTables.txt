@@ -10,11 +10,17 @@
   },
   {
     "titulo": "Como funciona?",
-    "conteudo": "É um array que armazena os elementos, onde cada índice é determinado pela função de dispersão aplicada à chave correspondente. Cada posição na tabela é chamada de 'slot' ou 'bucket'."
+    "conteudo": "Uma Hash Table é uma estrutura de dados semelhante a objetos, que consiste em uma coleção de pares chave-valor. Frequentemente, ela também é chamada de array associativo em JavaScript. Uma tabela de dispersão transforma secretamente a chave-valor em um número (também chamado de hash) usando uma função de hash. Esse número é então associado ao valor correspondente e armazenado em um compartimento de armazenamento."
+  },
+    {
+    "titulo": "Uma breve ilustração",
+    "conteudo": "",
+    "imagem" : "assets/animations/ilustration-hash.gif"
   },
   {
     "titulo": "O que são as colisões?",
-    "conteudo": "Ocorrem quando duas chaves diferentes têm o mesmo índice após a aplicação da função de dispersão. Existem diferentes métodos para lidar com colisões, como encadeamento (chaining) e endereçamento aberto."
+    "conteudo": "Ocorrem quando duas chaves diferentes têm o mesmo índice após a aplicação da função de dispersão. Existem diferentes métodos para lidar com colisões, como encadeamento (chaining) e endereçamento aberto.",
+    "imagem" : "assets/image/conflito-hash.jpg"
   },
   {
     "titulo": "Onde é aplicado?",
