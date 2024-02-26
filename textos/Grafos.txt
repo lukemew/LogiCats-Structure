@@ -16,6 +16,17 @@
   },
   {
     "titulo": "Ciclos e Acíclicos? (mas o que isso tem haver com gatos)",
-    "conteudo": "Grafos podem ser cíclicos (contendo ciclos) ou acíclicos (sem ciclos). Grafos acíclicos são comuns em representações de hierarquias, enquanto grafos cíclicos são frequentemente usados em modelagem de sistemas dinâmicos. <br> É, para sua infelicidade isso não tem nada haver com gatos... eu acho"
+    "conteudo": "Grafos podem ser cíclicos (contendo ciclos) ou acíclicos (sem ciclos). Grafos acíclicos são comuns em representações de hierarquias, enquanto grafos cíclicos são frequentemente usados em modelagem de sistemas dinâmicos. <br> É, para sua infelicidade isso não tem nada haver com gatos... eu acho",
+    "imagem": "assets/image/gato-corroendo-grafos.jpg"
+  },
+  {
+    "titulo": "Ilustração 1: Trecho de um tomador de decisões em uma rede neural",
+    "conteudo": "Pode ser considerada um grafo",
+    "imagem" : "assets/animations/rede-neural-grafos.gif"
+  },
+  {
+    "titulo": "Ilustração 2: Twitter",
+    "conteudo": "Um exemplo de grafo de retweets produzido pelo LABIC-UFES. Os nós são usuários do twitter e as arestas ligam as pessoas que se retweetam.",
+    "imagem" : "assets/animations/twitter-grafos.gif"
   }
 ]
