@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://github.com/vini-21samuel/Sistema-banc-rio-em-C/assets/130195075/a1d8f057-8b24-41ed-ab4c-7e451d7da5fb" alt="Logo">
+</p>
 
 
 # LogiCats 🐈 	&#127922;
