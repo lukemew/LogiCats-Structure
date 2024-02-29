@@ -6,18 +6,27 @@
   },
   {
     "titulo": "Uma breve analogia",
-    "conteudo": "Dessa vez não poderemos utilizar gatinhos, mas imagine uma pilha de pratos onde você adiciona ou remove pratos apenas no topo da pilha, certo? Então, o último prato adicionado é o primeiro a ser removido (LIFO - Last In, First Out). Se você quiser chegar a um prato específico, precisa retirar os pratos superiores até encontrar o desejado, essa é a lógica!."
+    "conteudo": "Dessa vez não poderemos utilizar gatinhos, mas imagine uma pilha de pratos onde você adiciona ou remove pratos apenas no topo da pilha, certo? Então, o último prato adicionado é o primeiro a ser removido (LIFO - Last In, First Out). Se você quiser chegar a um prato específico, precisa retirar os pratos superiores até encontrar o desejado, essa é a lógica!.",
+    "imagem" : "assets/image/gato-espreitando-pratos.jpeg"
   },
   {
     "titulo": "O que é o LIFO (Last In, First Out)?",
-    "conteudo": "O último elemento adicionado a uma pilha é o primeiro a ser removido. Isso é útil em situações onde a ordem de processamento segue uma lógica de 'último a entrar, primeiro a sair', como na execução de sub-rotinas ou na implementação de operações desfazer/reverter. <br> É como se houvessem vários gatos deitados um em cima do outro e você precisasse tirá-los um por um, o que estivesse lá no topo certamente iria ser o primeiro a sair, e com certeza foi o ultimo a entrar, xD"
+    "conteudo": "O último elemento adicionado a uma pilha é o primeiro a ser removido. Isso é útil em situações onde a ordem de processamento segue uma lógica de 'último a entrar, primeiro a sair', como na execução de sub-rotinas ou na implementação de operações desfazer/reverter. <br> É como se houvessem vários gatos deitados um em cima do outro e você precisasse tirá-los um por um, o que estivesse lá no topo certamente iria ser o primeiro a sair, e com certeza foi o ultimo a entrar, xD",
+    "imagem" : "assets/image/pilha-lifo.jpg"
   },
   {
     "titulo": "Qual o uso comum?",
-    "conteudo": "Pilhas são frequentemente utilizadas em algoritmos de análise sintática (parsing), gerenciamento de chamadas de função, e em situações onde a ordem de reversão é crítica. <br> Pilhas podem ser implementadas usando estruturas de dados simples, como arrays ou listas encadeadas. A operação de adição é chamada de 'push', e a operação de remoção é chamada de 'pop'. É importante garantir que a pilha não esteja vazia antes de tentar realizar uma operação 'pop' para evitar erros."
+    "conteudo": "Pilhas são frequentemente utilizadas em algoritmos de análise sintática (parsing), gerenciamento de chamadas de função, e em situações onde a ordem de reversão é crítica. <br> Pilhas podem ser implementadas usando estruturas de dados simples, como arrays ou listas encadeadas. A operação de adição é chamada de 'push', e a operação de remoção é chamada de 'pop'. É importante garantir que a pilha não esteja vazia antes de tentar realizar uma operação 'pop' para evitar erros.",
+    "imagem" : "assets/image/gato-lupa.jpeg"
+  },
+  {
+    "titulo": "Uma breve ilustração",
+    "conteudo": "",
+    "imagem" : "assets/animations/stack.gif"
   },
   {
     "titulo": "Um breve exemplo",
-    "conteudo": "Um exemplo prático de uma pilha é a implementação da funcionalidade 'desfazer' em softwares. Cada ação realizada pelo usuário é empilhada, permitindo que a operação de 'desfazer' remova a última ação realizada."
+    "conteudo": "Um exemplo prático de uma pilha é a implementação da funcionalidade 'desfazer' em softwares. Cada ação realizada pelo usuário é empilhada, permitindo que a operação de 'desfazer' remova a última ação realizada.",
+    "imagem" : "assets/image/pilha-em-pratica.jpg"
   }
 ]

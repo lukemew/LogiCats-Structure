@@ -1,7 +1,8 @@
 [
   {
     "titulo": "Um Gato na Caixa: Um pouco sobre Arrays",
-    "conteudo": "Se você se interessa por programação (o que é uma certeza, se não nem faria sentido estar aqui), com certeza já deve ter ouvido falar sobre arrays, mas afinal o que são?"
+    "conteudo": "Se você se interessa por programação (o que é uma certeza, se não nem faria sentido estar aqui), com certeza já deve ter ouvido falar sobre arrays, mas afinal o que são?",
+    "imagem": "assets/image/cat-box-arrays.jpg"
   },
   {
     "titulo": "Analogia: cat in the box",
@@ -10,14 +11,23 @@
   },
   {
     "titulo": "Mestres da alocação",
-    "conteudo": "Arrays alocam seus elementos de maneira contígua na memória, permitindo um acesso eficiente usando índices. Isso significa que, ao acessar um elemento, o sistema sabe exatamente onde encontrá-lo em termos de posição de memória."
+    "conteudo": "Os arrays são verdadeiros mestres quando se trata de alocação de elementos na memória. Eles organizam seus elementos de forma contígua, o que permite um acesso eficiente usando índices. Essa característica é fundamental para a rapidez com que podemos recuperar informações específicas de um array. Quando acessamos um elemento pelo seu índice, o sistema sabe exatamente onde encontrá-lo em termos de posição de memória. Essa eficiência é especialmente valiosa em algoritmos e estruturas de dados que dependem de acesso rápido e preciso aos elementos."
   },
   {
     "titulo": "Vantagens e Desvantagens",
-    "conteudo": "A principal vantagem dos arrays é o acesso direto e eficiente aos elementos por meio de índices. Se você souber o índice do elemento desejado, pode recuperá-lo rapidamente. <br> Todavia, A inserção ou remoção de elementos no meio de um array pode ser ineficiente, pois todos os elementos subsequentes precisam ser deslocados para abrir espaço ou preencher o espaço deixado."
+    "conteudo": "A principal vantagem dos arrays é o acesso direto e eficiente aos elementos por meio de índices. Se você souber o índice do elemento desejado, pode recuperá-lo rapidamente. <br> Todavia, A inserção ou remoção de elementos no meio de um array pode ser ineficiente, pois todos os elementos subsequentes precisam ser deslocados para abrir espaço ou preencher o espaço deixado.",
+    "imagem": "assets/animations/two-arrays.gif"
   },
   {
+    "titulo": "Arrays em ação",
+    "conteudo": "O método pop() remove o último elemento de um array. <br> O método push() adiciona um ou mais elementos ao final de um array. <br> O método shift() remove o primeiro elemento de um array. <br> O método unshift() adiciona um ou mais elementos ao início do array.",
+    "imagem": "assets/animations/arrays.gif"
+  },
+
+
+  {
     "titulo": "Uso comum:",
-    "conteudo": "Arrays são frequentemente usados em situações onde o tamanho é conhecido antecipadamente e a eficiência de acesso é crucial, como em operações matriciais ou listas de tamanho fixo."
+    "conteudo": "Arrays são frequentemente usados em situações onde o tamanho é conhecido antecipadamente e a eficiência de acesso é crucial, como em operações matriciais ou listas de tamanho fixo. Muitas estruturas de dados, como filas, pilhas e tabelas hash, são implementadas usando arrays.",
+    "imagem": "assets/image/cafe-arrays.jpg"
   }
 ]

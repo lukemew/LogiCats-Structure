@@ -1,7 +1,8 @@
 [
   {
     "titulo": "Árvores em Estrutura de Dados:",
-    "conteudo": "Em estruturas de árvores, cada elemento, ou nó, possui um papel definido como pai, filho ou folha. Os nós são organizados hierarquicamente, proporcionando uma estrutura de dados eficaz para representar relações hierárquicas."
+    "conteudo": "Em estruturas de árvores, cada elemento, ou nó, possui um papel definido como pai, filho ou folha. Os nós são organizados hierarquicamente, proporcionando uma estrutura de dados eficaz para representar relações hierárquicas.",
+    "imagem": "assets/image/presentes-arvores.jpg"
   },
   {
     "titulo": "Uma breve Analogia:",
@@ -10,7 +11,8 @@
   },
   {
     "titulo": "Uma busca eficiente:",
-    "conteudo": " A principal vantagem das árvores é a eficiência na busca de elementos. A hierarquia permite uma busca eficiente, especialmente em árvores balanceadas, onde a altura é minimizada."
+    "conteudo": "A principal vantagem das árvores é a eficiência na busca de elementos. A hierarquia permite uma busca eficiente, especialmente em árvores balanceadas. Nessas árvores, a altura é minimizada, o que otimiza a busca e torna a recuperação de elementos mais rápida e eficaz. <br> A seguir podemos ver um exemplo de Arvore, onde cada decisão leva a um resultado final diferente",
+    "imagem": "assets/image/decisao-arvores.jpg"
   },
   {
     "titulo": "Estrutura de uma Árvore:",
@@ -18,7 +20,18 @@
   },
   {
     "titulo": "Um pouco complexo...",
-    "conteudo": "No entanto, a implementação de árvores pode ser mais complexa do que outras estruturas de dados, exigindo cuidados para garantir o equilíbrio e eficiência."
+    "conteudo": "No entanto, a implementação de árvores pode ser mais complexa do que outras estruturas de dados, exigindo cuidados para garantir o equilíbrio e eficiência. Em seguida, veremos um pouco sobre Árvores Binárias ",
+    "imagem" : "assets/image/gato-triste-arvore.jpeg"
+  },
+  {
+    "titulo": "Árvores Binárias",
+    "conteudo": "Em uma árvore binária, cada nó tem no máximo dois filhos e isso é frequentemente útil em buscas, onde chamamos essa árvore de árvore de busca binária. Cada valor que vem do nó do lado esquerdo deve ser menor que o valor de seu pai, e no lado esquerdo, cada descendente deve ter um valor maior que o do pai.",
+    "imagem" : "assets/image/binary-arvores.jpg"
+  },
+  {
+    "titulo": "Um exemplo para entender de vez Árvores Binárias",
+    "conteudo": "O nó A é a raiz da árvore. Como B é a raiz da sua sub-árvore esquerda dizemos que B é o filho esquerdo de A, do mesmo modo, C é o filho direito de A. Por isso A é o pai dos nós B e C e estes dois são irmãos.",
+    "imagem" : "assets/image/exemplo-arvores.jpg"
   },
   {
     "titulo": "Uso comum:",

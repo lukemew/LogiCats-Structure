@@ -1,7 +1,13 @@
 [
   {
     "titulo": "O que são Heaps?",
-    "conteudo": "Heaps são árvores parcialmente ordenadas onde o valor de cada nó é menor ou igual aos valores de seus filhos. Em um heap máximo, o nó no topo tem o maior valor."
+    "conteudo": "Heaps são outro tipo de estrutura de árvore que possui dois subtipos: MaxHeaps e MinHeaps. Em MaxHeaps, os nós pais são sempre maiores do que seus filhos, enquanto em MinHeaps, os nós pais são sempre menores do que seus filhos. Nesse caso, não há muita conexão entre os irmãos, apenas uma relação de pai/filho.",
+    "imagem": "assets/image/exemplo-heaps.jpg"
+  },
+   {
+    "titulo": "Uma breve ilustração: MaxHeaps",
+    "conteudo": "",
+    "imagem" : "assets/animations/max-heap-animation.gif"
   },
   {
     "titulo": "Analogia, gatos e heaps (gatos hippies)",

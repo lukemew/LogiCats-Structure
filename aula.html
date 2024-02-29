@@ -1,80 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8" />
+    <title>LogiCats</title>
 
-<head>
-  <!-- Metadados da página -->
-  <meta charset="UTF-8">
-  <title>LogiCats</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="reset.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:ital,wght@0,500;0,700;1,700&family=Radio+Canada:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Estilos -->
-  <link rel="stylesheet" href="reset.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:ital,wght@0,500;0,700;1,700&family=Radio+Canada:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <!-- Ícone da página -->
+    <link
+      rel="shortcut icon"
+      href="assets/icons/cat_icon_02.png"
+      type="image/x-icon"
+    />
+  </head>
 
-  <!-- Ícone da página -->
-  <link rel="shortcut icon" href="assets/icons/cat_icon_02.png" type="image/x-icon">
-</head>
-
-<body class="aula">
-  <!-- Cabeçalho da aula -->
-  <header class="cabecalho-aula">
-    <!-- Logotipo e navegação -->
-    <div class="cabecalho-logo cabecalho-aula__logo">
-      <img class="cabecalho-logo__imagem" src="assets/icons/cat_icon_02.png" alt="logo gatinho">
-      <img class="cabecalho-logo__logicats" src="assets/LogiCats_logo_ciano.png" alt="Logicats">
-    </div>
-
-    <!-- Navegação -->
-    <div class="cabecalho-navigation">
-      <a class="cabecalho-navigation__link aula__link" href="sobre.html">Sobre nós</a>
-      <a class="cabecalho-navigation__link aula__link" href="index.html">Inicio</a>
-      <a class="cabecalho-navigation__link aula__link" href="index.html#menu">Menu</a>
-    </div>
-  </header>
-
-  <!-- Seção principal da aula -->
-  <section class="aula">
-    <div class="container">
-      <!-- Estrutura da aula -->
-      <div class="aula__estrutura">
-        <h2 class="aula__estrutura-nome" id="nome-estrutura"></h2>
+  <body class="aula">
+    <!-- Cabeçalho da aula -->
+    <header class="cabecalho-aula">
+      <!-- Logotipo e navegação -->
+      <div class="cabecalho-logo cabecalho-aula__logo">
+        <img
+          class="cabecalho-logo__imagem"
+          src="assets/icons/cat_icon_02.png"
+          alt="logo gatinho"
+        />
+        <img
+          class="cabecalho-logo__logicats"
+          src="assets/LogiCats_logo_ciano.png"
+          alt="Logicats"
+        />
       </div>
 
-      <!-- Ensinos da aula -->
-      <div class="container__ensinamentos">
-        <div class="navbar" id="navbar"></div>
-        <div class="aula__ensinamentos" id="conteudo-aula"></div>
+      <!-- Navegação -->
+      <div class="cabecalho-navigation">
+        <a class="cabecalho-navigation__link aula__link" href="sobre.html"
+          >Sobre nós</a
+        >
+        <a class="cabecalho-navigation__link aula__link" href="index.html"
+          >Inicio</a
+        >
+        <a class="cabecalho-navigation__link aula__link" href="index.html"
+          >Menu</a
+        >
       </div>
-    
-      <!-- Navbar lateral -->
-      <div class="container__seletores">
-        <div class="aula__botao">
-          <h2 class="aula__botao-back" id="back-button">Anterior</h2>
+    </header>
+
+    <!-- Seção principal da aula -->
+    <section class="aula">
+      <div class="container">
+        <!-- Estrutura da aula -->
+        <div class="aula__estrutura">
+          <h2 class="aula__estrutura-nome" id="nome-estrutura"></h2>
         </div>
-        <div class="aula__botao">
-          <h2 class="aula__botao-next" id="next-button">Próximo</h2>
+
+        <!-- Ensinos da aula -->
+        <div class="container__ensinamentos">
+          <div class="navbar" id="navbar"></div>
+          <div class="aula__ensinamentos" id="conteudo-aula"></div>
+        </div>
+
+        <!-- Navbar lateral -->
+        <div class="container__seletores">
+          <div class="aula__botao" id="back-button">
+            <h2 class="aula__botao-back">Anterior</h2>
+          </div>
+          <div class="aula__botao" id="next-button">
+            <h2 class="aula__botao-next">Próximo</h2>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Rodapé da aula -->
-  <footer class="rodape-aula">
-    <!-- Logotipo e texto -->
-    <div class="rodape-logo cabecalho-logo rodape-aula__logo">
-      <img class="cabecalho-logo__imagem" src="assets/LogiCats_logo_ciano.png" alt="Logicats">
-      <div class="rodape-texto">
-        <h2>Todos os direitos reservados.</h2>
-        <div class="rodape-textos__icons"></div>
+    <!-- Rodapé da aula -->
+    <footer class="rodape-aula">
+      <!-- Logotipo e texto -->
+      <div class="rodape-logo cabecalho-logo rodape-aula__logo">
+        <img
+          class="cabecalho-logo__imagem"
+          src="assets/LogiCats_logo_ciano.png"
+          alt="Logicats"
+        />
+        <div class="rodape-texto">
+          <h2>Todos os direitos reservados.</h2>
+          <div class="rodape-textos__icons"></div>
+        </div>
+        <div class="rodape-catIcon"></div>
       </div>
-      <div class="rodape-catIcon"></div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Script principal -->
-  <script src="./script/main.js"></script>
-</body>
-
+    <!-- Script principal -->
+    <script src="./script/main.js"></script>
+  </body>
 </html>
