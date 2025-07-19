@@ -3,10 +3,14 @@
 </p>
 
 
-# LogiCats 🐈 	&#127922;
-O LogiCats é um projeto educacional e divertido que utiliza ilustrações de gatos para ensinar de forma teórica as principais estruturas de dados. Seu objetivo é tornar o aprendizado desses conceitos complexos mais acessível e interessante, transformando a jornada do aprendizado em uma dança de compreensão felina. O nome "LogiCats" vem de "logi", que representa a lógica de programação, e "cats", que vem de gatos. Juntos, eles simbolizam a fusão entre a lógica da programação e algoritmo e a representação divertida e cativante dos gatos, criando uma abordagem única e envolvente para o ensino de estruturas de dados.
+# LogiCats 
+O LogiCats é um projeto educacional que utiliza ilustrações de gatos para ensinar de forma teórica as principais estruturas de dados. Seu objetivo é tornar o aprendizado desses conceitos complexos mais acessível e interessante, transformando a jornada do aprendizado em uma dança de compreensão felina.
 
+O nome "LogiCats" vem de "logi", que representa a lógica de programação, e "cats", que vem de gatos. Juntos, eles simbolizam a fusão entre a lógica da programação e algoritmo e a representação divertida e cativante dos gatos, criando uma abordagem única e envolvente para o ensino de estruturas de dados.
 
+<div align="center">
+  <img src="./assets/icons/ilustracao-gatos.png"/>
+</div>
 
 # Por que gatos?
 Os gatos são conhecidos por sua curiosidade, agilidade e capacidade de resolver problemas de forma inteligente. Essas características fazem deles excelentes representantes das estruturas de dados, que também requerem pensamento lógico e habilidade para lidar com informações de forma eficiente. Além disso, a presença dos gatos torna o aprendizado mais leve e divertido, proporcionando uma experiência educacional mais agradável.
